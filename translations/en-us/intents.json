@@ -1,0 +1,8 @@
+{
+    "/intent/disable_ready_notification.intent": [
+        "(disable|turn off|deactivate) (ready|start|startup|start up|boot|load|readiness|started|booted|loaded) (sound|notification|speech|sounds|notifications)"
+    ],
+    "/intent/enable_ready_notification.intent": [
+        "(enable|turn on|activate) (ready|start|startup|start up|boot|load|readiness|started|startup|booted|loaded) (sound|notification|speech|sounds|notifications)"
+    ]
+}
