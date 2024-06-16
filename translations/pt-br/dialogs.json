@@ -1,11 +1,11 @@
 {
     "/dialog/confirm_no_speak_ready.dialog": [
-        "Compreendido. Vou deixar de te notificar quando acabar de reiniciar"
+        "Entendi. Vou parar de notificá-lo quando acabar de reiniciar"
     ],
     "/dialog/ready.dialog": [
         "Estou pronto!"
     ],
     "/dialog/confirm_speak_ready.dialog": [
-        "Okay. Vou-te notificar quando estiver pronto sempre que reiniciar"
+        "Okay. Vou notificá-lo quando estiver pronto sempre que reiniciar"
     ]
 }
