@@ -1,0 +1,11 @@
+{
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Va bene. Smetterò di avvisarti quando sono pronto."
+  ],
+  "/dialog/ready.dialog": [
+    "Sono pronto!"
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Va bene. Ti dirò quando sarò pronto dopo il riavvio."
+  ]
+}

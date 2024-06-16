@@ -1,0 +1,8 @@
+{
+  "/intent/disable_ready_notification.intent": [
+    "disattiva le notifiche all'avvio"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "attiva le notifiche all'avvio"
+  ]
+}
