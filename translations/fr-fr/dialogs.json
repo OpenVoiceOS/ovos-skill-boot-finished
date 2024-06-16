@@ -1,0 +1,11 @@
+{
+    "/dialog/confirm_no_speak_ready.dialog": [
+        "D'accord. Je vais arreter de vous avertir lorsque le démarrage est terminé."
+    ],
+    "/dialog/ready.dialog": [
+        "Je suis prêt !"
+    ],
+    "/dialog/confirm_speak_ready.dialog": [
+        "Okay. Je vais vous avertir à chaque fois que je suis prêt lorsque le démarrage est terminé."
+    ]
+}
