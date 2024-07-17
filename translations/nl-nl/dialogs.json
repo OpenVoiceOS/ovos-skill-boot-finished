@@ -1,0 +1,11 @@
+{
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Oké, ik zal geen melding geven nadat ik ben opgestart."
+  ],
+  "/dialog/ready.dialog": [
+    "Ik ben er klaar voor!"
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Oké, ik geef een melding nadat ik ben opgestart."
+  ]
+}
