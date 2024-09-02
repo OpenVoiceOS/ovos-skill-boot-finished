@@ -1,28 +1,17 @@
 # Changelog
 
-## [0.0.1a3](https://github.com/NeonGeckoCom/skill-core_ready/tree/0.0.1a3) (2023-12-16)
+## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/HEAD)
 
-[Full Changelog](https://github.com/NeonGeckoCom/skill-core_ready/compare/0.0.1a2...0.0.1a3)
-
-**Merged pull requests:**
-
-- Update test dependency [\#3](https://github.com/NeonGeckoCom/skill-core_ready/pull/3) ([NeonDaniel](https://github.com/NeonDaniel))
-
-## [0.0.1a2](https://github.com/NeonGeckoCom/skill-core_ready/tree/0.0.1a2) (2023-11-27)
-
-[Full Changelog](https://github.com/NeonGeckoCom/skill-core_ready/compare/0.0.1a1...0.0.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/6c2a65ef396bee4c9614b1e7ed4e7d5305b2b87b...HEAD)
 
 **Merged pull requests:**
 
-- Add more phrasing to intents with updated tests [\#2](https://github.com/NeonGeckoCom/skill-core_ready/pull/2) ([NeonDaniel](https://github.com/NeonDaniel))
-
-## [0.0.1a1](https://github.com/NeonGeckoCom/skill-core_ready/tree/0.0.1a1) (2023-11-18)
-
-[Full Changelog](https://github.com/NeonGeckoCom/skill-core_ready/compare/6c2a65ef396bee4c9614b1e7ed4e7d5305b2b87b...0.0.1a1)
-
-**Merged pull requests:**
-
-- Skill initial implementation [\#1](https://github.com/NeonGeckoCom/skill-core_ready/pull/1) ([NeonDaniel](https://github.com/NeonDaniel))
+- NL intents [\#7](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/7) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- NL dialogs [\#6](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/6) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add pt-br and fr-fr [\#5](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/5) ([femelo](https://github.com/femelo))
+- added italian [\#4](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/4) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- pt-pt/intents [\#3](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/3) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- pt-pt/translate-dialogs [\#2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/2) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
