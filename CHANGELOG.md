@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/HEAD)
+## [V0.1.0a2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.1.0a2) (2024-09-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/6c2a65ef396bee4c9614b1e7ed4e7d5305b2b87b...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/6c2a65ef396bee4c9614b1e7ed4e7d5305b2b87b...V0.1.0a2)
 
 **Merged pull requests:**
 
