@@ -5,7 +5,21 @@
     "/dialog/ready.dialog": [
         "I am ready!"
     ],
+    "/dialog/confirm_ready.dialog": [
+        "My system is fully ready.",
+        "All services are up and running.",
+        "My system is ready to go.",
+        "Everything is up and operational.",
+        "My system has finished booting and is ready."
+    ],
     "/dialog/confirm_speak_ready.dialog": [
         "Okay. I will tell you when I am ready after restarts."
+    ],
+    "/dialog/deny_ready.dialog": [
+        "My system is not fully ready yet.",
+        "Some services are still starting up.",
+        "My system is still booting, please wait.",
+        "Not everything is ready yet.",
+        "The system isn't fully operational yet, please give me some more time."
     ]
 }
