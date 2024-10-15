@@ -1,0 +1,11 @@
+{
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "D'acord. Deixaré d'avisar-vos que estic a punt."
+  ],
+  "/dialog/ready.dialog": [
+    "Ja estic llest!"
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "D'acord. Després de reiniciar, us diré quan estic preparat."
+  ]
+}
