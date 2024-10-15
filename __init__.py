@@ -25,15 +25,129 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE,  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+import threading
+from time import monotonic, sleep
+from typing import Optional
+
 from ovos_bus_client.message import Message
-from ovos_workshop.skills import OVOSSkill
-from ovos_workshop.decorators import intent_handler
 from ovos_utils.log import LOG
+from ovos_workshop.decorators import intent_handler
+from ovos_workshop.skills import OVOSSkill
 
 
 class BootFinishedSkill(OVOSSkill):
+    _connected_event = threading.Event()
+    _network_event = threading.Event()
+    _gui_event = threading.Event()
+
     def initialize(self):
+        self.add_event("mycroft.network.connected", self.handle_network_connected)
+        self.add_event("mycroft.internet.connected", self.handle_internet_connected)
+        self.add_event("mycroft.gui.available", self.handle_gui_connected)
         self.add_event("mycroft.ready", self.handle_ready)
+        self.add_event("mycroft.ready.check", self.handle_check_device_readiness)
+        self.handle_check_device_readiness()
+
+    def is_device_ready(self) -> bool:
+        """Check if the device is ready by waiting for various services to start.
+
+        Returns:
+            bool: True if the device is ready, False otherwise.
+        Raises:
+            TimeoutError: If the device is not ready within a specified timeout.
+        """
+        is_ready = False
+        # Different setups will have different needs
+        # eg, a server does not care about audio
+        # internet -> device is connected to the internet - NOT IMPLEMENTED
+        # skills -> skills reported ready
+        # speech -> stt reported ready
+        # audio -> audio playback reported ready
+        # gui -> gui websocket reported ready - NOT IMPLEMENTED
+        # enclosure -> enclosure/HAL reported ready - NOT IMPLEMENTED
+        # TODO - allow requiring specific skills to be fully loaded
+        services = {k: False for k in
+                    self.settings.get("ready_settings", ["skills", "speech", "audio"])}
+        start = monotonic()
+        while not is_ready:
+            is_ready = self.check_services_ready(services)
+            if is_ready:
+                break
+            elif monotonic() - start >= 60:
+                raise TimeoutError(
+                    f'Timeout waiting for services start. services={services}')
+            else:
+                sleep(3)
+        return is_ready
+
+    def check_services_ready(self, services):
+        """Report if all specified services are ready.
+
+        Args:
+            services (iterable): Service names to check.
+        Returns:
+            bool: True if all specified services are ready, False otherwise.
+        """
+        for ser, rdy in services.items():
+            if rdy:
+                # already reported ready
+                continue
+            if ser in ["gui", "enclosure"]:
+                # not implemented
+                services[ser] = True
+                continue
+            elif ser in ["network_skills"]:
+                services[ser] = self._network_event.is_set()
+                continue
+            elif ser in ["internet_skills"]:
+                services[ser] = self._connected_event.is_set()
+                continue
+            response = self.bus.wait_for_response(
+                Message(f'mycroft.{ser}.is_ready',
+                        context={"source": "skills", "destination": ser}))
+            if response and response.data['status']:
+                services[ser] = True
+        return all([services[ser] for ser in services])
+
+    def handle_gui_connected(self, message):
+        """Handle GUI connection event.
+
+        Args:
+            message: Message containing information about the GUI connection.
+        """
+        if not self._gui_event.is_set():
+            LOG.debug("GUI Connected")
+            self._gui_event.set()
+
+    def handle_internet_connected(self, message):
+        """Handle internet connection event.
+
+        Args:
+            message: Message containing information about the internet connection.
+        """
+        if not self._connected_event.is_set():
+            LOG.debug("Internet Connected")
+            self._network_event.set()
+            self._connected_event.set()
+
+    def handle_network_connected(self, message):
+        """Handle network connection event.
+
+        Args:
+            message: Message containing information about the network connection.
+        """
+        if not self._network_event.is_set():
+            LOG.debug("Network Connected")
+            self._network_event.set()
+
+    def handle_check_device_readiness(self, message: Optional[Message] = None):
+        """Handle the check device readiness event."""
+        if self.is_device_ready():
+            LOG.info("OVOS is all loaded and ready to roll!")
+            self.bus.emit(Message('mycroft.ready'))
+        else:
+            sleep(5)
+            self.bus.emit(Message('mycroft.ready.check'))
 
     @property
     def speak_ready(self):
@@ -41,14 +155,14 @@ class BootFinishedSkill(OVOSSkill):
         Speak `ready` dialog when ready unless disabled in settings
         """
         return self.settings.get("speak_ready", True)
-        
+
     @property
     def ready_sound(self):
         """
         play sound when ready unless disabled in settings
         """
         return self.settings.get("ready_sound", True)
-                                 
+
     def handle_ready(self, message: Message):
         """
         Handle mycroft.ready event. Notify the user everything is ready if
