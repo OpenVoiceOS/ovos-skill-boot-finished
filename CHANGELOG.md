@@ -7,6 +7,8 @@
 **Merged pull requests:**
 
 - fix:update\_requirements [\#12](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/12) ([JarbasAl](https://github.com/JarbasAl))
+- accepted index translation [\#11](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/11) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- accepted addition translation [\#10](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/10) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan translation [\#9](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/9) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan translation [\#8](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
