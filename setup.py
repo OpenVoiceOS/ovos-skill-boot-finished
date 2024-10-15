@@ -28,7 +28,7 @@ def find_resource_files():
     return package_data
 
 
-with open("README.md", "r") as f:
+with open(path.join(path.abspath(path.dirname(__file__)), "README.md"), "r") as f:
     long_description = f.read()
 
 
@@ -60,6 +60,7 @@ setup(
     name=PYPI_NAME,
     version=get_version(),
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url=URL,
     author=SKILL_AUTHOR,
     description='OVOS finished booting skill',
