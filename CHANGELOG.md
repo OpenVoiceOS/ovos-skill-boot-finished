@@ -1,11 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/HEAD)
+## [0.2.1a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.2.1a1) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.2.0a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.2.0a1...0.2.1a1)
 
 **Merged pull requests:**
 
+- fix:long description [\#13](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/13) ([JarbasAl](https://github.com/JarbasAl))
 - fix:update\_requirements [\#12](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/12) ([JarbasAl](https://github.com/JarbasAl))
 - accepted index translation [\#11](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/11) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - accepted addition translation [\#10](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/10) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
