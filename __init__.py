@@ -59,13 +59,20 @@ class BootFinishedSkill(OVOSSkill):
         is_ready = False
         # Different setups will have different needs
         # eg, a server does not care about audio
-        # internet -> device is connected to the internet - NOT IMPLEMENTED
+        # internet -> device is connected to the internet
+        # network -> device is connected to the internet
+        # gui_connected -> a gui client connected to the gui socket
+
+        # any service using ProcessStatus class can also be added to ready_settings
         # skills -> skills reported ready
         # speech -> stt reported ready
         # audio -> audio playback reported ready
-        # gui -> gui websocket reported ready - NOT IMPLEMENTED
-        # enclosure -> enclosure/HAL reported ready - NOT IMPLEMENTED
+        # gui -> gui websocket reported ready
+        # PHAL -> enclosure/HAL reported ready
+
         # TODO - allow requiring specific skills to be fully loaded
+        # skills might be loaded by core or run standalone, we should standardize how this is checked via bus
+        # perhaps ProcessStatus with skill_id ?
         services = {k: False for k in
                     self.settings.get("ready_settings", ["skills", "speech", "audio"])}
         start = monotonic()
@@ -92,15 +99,14 @@ class BootFinishedSkill(OVOSSkill):
             if rdy:
                 # already reported ready
                 continue
-            if ser in ["gui", "enclosure"]:
-                # not implemented
-                services[ser] = True
-                continue
-            elif ser in ["network_skills"]:
+            if ser in ["network_skills", "network"]:
                 services[ser] = self._network_event.is_set()
                 continue
-            elif ser in ["internet_skills"]:
+            elif ser in ["internet_skills", "internet"]:
                 services[ser] = self._connected_event.is_set()
+                continue
+            elif ser in ["gui_connected"]:
+                services[ser] = self._gui_event.is_set()
                 continue
             response = self.bus.wait_for_response(
                 Message(f'mycroft.{ser}.is_ready',
@@ -176,6 +182,16 @@ class BootFinishedSkill(OVOSSkill):
         else:
             LOG.debug("Ready notification disabled in settings")
         self.enclosure.eyes_blink("b")
+
+    @intent_handler("are_you_ready.intent")
+    def handle_enable_notification(self, message: Message):
+        """
+        Handle a request to enable ready announcements
+        """
+        if self.is_device_ready():
+            self.speak_dialog("confirm_ready")
+        else:
+            self.speak_dialog("deny_ready")
 
     @intent_handler("enable_ready_notification.intent")
     def handle_enable_notification(self, message: Message):
