@@ -1,21 +1,16 @@
 # Changelog
 
-## [0.2.1a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.2.1a1) (2024-10-15)
+## [0.3.0a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.3.0a1) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.2.0a1...0.2.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.2.1...0.3.0a1)
 
 **Merged pull requests:**
 
-- fix:long description [\#13](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/13) ([JarbasAl](https://github.com/JarbasAl))
-- fix:update\_requirements [\#12](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/12) ([JarbasAl](https://github.com/JarbasAl))
-- accepted index translation [\#11](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/11) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- accepted addition translation [\#10](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/10) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add Catalan translation [\#9](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/9) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add Catalan translation [\#8](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- feat:mycroft.ready [\#15](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/15) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.0a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.2.0a1) (2024-09-02)
+## [V0.2.1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.2.1) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.1.0...V0.2.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.2.1...V0.2.1)
 
 
 
