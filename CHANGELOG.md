@@ -1,21 +1,16 @@
 # Changelog
 
-## [V0.1.0](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.1.0) (2024-09-02)
+## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.1.0a2...V0.1.0)
-
-## [V0.1.0a2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.1.0a2) (2024-09-02)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/6c2a65ef396bee4c9614b1e7ed4e7d5305b2b87b...V0.1.0a2)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.2.0a1...HEAD)
 
 **Merged pull requests:**
 
-- NL intents [\#7](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/7) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- NL dialogs [\#6](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/6) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add pt-br and fr-fr [\#5](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/5) ([femelo](https://github.com/femelo))
-- added italian [\#4](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/4) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- pt-pt/intents [\#3](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/3) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- pt-pt/translate-dialogs [\#2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/2) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix:update\_requirements [\#12](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/12) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.2.0a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.2.0a1) (2024-09-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.1.0...V0.2.0a1)
 
 
 
