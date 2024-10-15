@@ -184,9 +184,9 @@ class BootFinishedSkill(OVOSSkill):
         self.enclosure.eyes_blink("b")
 
     @intent_handler("are_you_ready.intent")
-    def handle_enable_notification(self, message: Message):
+    def handle_are_you_ready(self, message: Message):
         """
-        Handle a request to enable ready announcements
+        Handle a user's inquiry about device readiness.
         """
         if self.is_device_ready():
             self.speak_dialog("confirm_ready")
