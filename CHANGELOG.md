@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.4.0a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.0a1) (2024-10-15)
+## [0.4.1a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.1a1) (2024-10-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.3.0...0.4.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.4.0...0.4.1a1)
 
 **Merged pull requests:**
 
-- feat:are\_you\_ready [\#17](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/17) ([JarbasAl](https://github.com/JarbasAl))
+- fix:ready check exceptions [\#19](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/19) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.3.0](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.3.0) (2024-10-15)
+## [V0.4.0](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.4.0) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.3.0...V0.3.0)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.0...V0.4.0)
 
 
 

@@ -46,7 +46,7 @@ class BootFinishedSkill(OVOSSkill):
         self.add_event("mycroft.gui.available", self.handle_gui_connected)
         self.add_event("mycroft.ready", self.handle_ready)
         self.add_event("mycroft.ready.check", self.handle_check_device_readiness)
-        self.handle_check_device_readiness()
+        self.bus.emit(Message("mycroft.ready.check"))
 
     def is_device_ready(self) -> bool:
         """Check if the device is ready by waiting for various services to start.
@@ -78,11 +78,8 @@ class BootFinishedSkill(OVOSSkill):
         start = monotonic()
         while not is_ready:
             is_ready = self.check_services_ready(services)
-            if is_ready:
+            if is_ready or monotonic() - start >= 60:
                 break
-            elif monotonic() - start >= 60:
-                raise TimeoutError(
-                    f'Timeout waiting for services start. services={services}')
             else:
                 sleep(3)
         return is_ready
