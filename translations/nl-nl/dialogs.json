@@ -5,7 +5,21 @@
   "/dialog/ready.dialog": [
     "Ik ben er klaar voor!"
   ],
+  "/dialog/confirm_ready.dialog": [
+    "Mijn systeem is helemaal klaar.",
+    "Alle diensten zijn operationeel.",
+    "Open Voice OS is klaar voor gebruik.",
+    "Ik ben uit de startblokken",
+    "Mijn systeem is opgestart en klaar."
+  ],
   "/dialog/confirm_speak_ready.dialog": [
     "Oké, ik geef een melding nadat ik ben opgestart."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Mijn systeem is nog niet helemaal klaar.",
+    "Sommige diensten zijn nog aan het opstarten.",
+    "Even geduld. Mijn systeem is nog steeds aan het opstarten.",
+    "Nog niet alles is klaar.",
+    "Het systeem is nog niet volledig operationeel. Geef me nog even de tijd."
   ]
 }
