@@ -1,16 +1,20 @@
 # Changelog
 
-## [0.4.1a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.1a1) (2024-10-16)
+## [0.4.2a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.2a1) (2024-10-28)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.4.0...0.4.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.4.1...0.4.2a1)
+
+**Closed issues:**
+
+- Not on PyPi [\#1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/issues/1)
 
 **Merged pull requests:**
 
-- fix:ready check exceptions [\#19](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+- Nl-nl translations [\#23](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/23) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
-## [V0.4.0](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.4.0) (2024-10-15)
+## [V0.4.1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.4.1) (2024-10-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.0...V0.4.0)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.1...V0.4.1)
 
 
 
