@@ -74,7 +74,7 @@ class BootFinishedSkill(OVOSSkill):
         # skills might be loaded by core or run standalone, we should standardize how this is checked via bus
         # perhaps ProcessStatus with skill_id ?
         services = {k: False for k in
-                    self.settings.get("ready_settings", ["skills", "speech", "audio"])}
+                    self.settings.get("ready_settings", ["skills"])}
         start = monotonic()
         while not is_ready:
             is_ready = self.check_services_ready(services)
