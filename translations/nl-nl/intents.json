@@ -1,8 +1,20 @@
 {
+  "/intent/are_you_ready.intent": [
+    "Is (het|Open Voice OS) systeem klaar?",
+    "(zijn|is) (alle services|het systeem|Open Voice OS|het apparaat) klaar met opstarten?",
+    "Zijn alle diensten (klaar|volledig gestart|nog steeds aan het laden|actief)",
+    "(Ben je|Is het systeem) klaar met (starten|laden|opstarten)",
+    "Is alles (klaar|volledig geladen|nog steeds aan het laden|up and running)",
+    "Ben je klaar met (opstarten|laden|starten)?",
+    "Is (het systeem|Open Voice OS|het apparaat) klaar?",
+    "(Heb je|is) (het systeem|Open Voice OS) succesvol opgestart",
+    "Is het opstarten voltooid?",
+    "(Ben|Zijn) (alle diensten|jij) begonnen?"
+  ],
   "/intent/disable_ready_notification.intent": [
-    "(klaar|start|opstart) (geluid|melding|meldingen)(uitschakelen|deactiveren) "
+    "opstart (geluid|melding|meldingen)(uitschakelen|deactiveren) "
   ],
   "/intent/enable_ready_notification.intent": [
-    "(klaar|start|opstart) (geluid|melding|meldingen)(inschakelen|activeren) "
+    "opstart (geluid|melding|meldingen)(inschakelen|activeren) "
   ]
 }
