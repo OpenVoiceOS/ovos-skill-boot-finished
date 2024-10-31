@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.4a1) (2024-10-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.3a1...0.4.4a1)
+
+**Merged pull requests:**
+
+- fix:allow workshop 3.0.0 [\#27](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/27) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.3a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.3a1) (2024-10-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.2a1...0.4.3a1)
