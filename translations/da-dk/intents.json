@@ -1,0 +1,20 @@
+{
+  "/intent/are_you_ready.intent": [
+    "Er (dit|the|Open Voice OS) system klar",
+    "Fuldførte (du|alle tjenester|systemet|Open Voice OS|enheden) opstarten",
+    "Er (du|alle tjenester) (klar|fuldt indlæst|indlæser stadig|oppe og køre)",
+    "(Har du|Har du systemet) afsluttet (starter|indlæsning|opstart|startsekvens)",
+    "Er alt (klar|fuldt indlæst|indlæser stadig|op og kører)",
+    "Er du færdig (opstart|indlæsning|startsekvensen)",
+    "Er (systemet|Open Voice OS|enheden) klar",
+    "(Har|det) (systemet|du|Open Voice OS) startede med succes",
+    "Er opstarten (proces|sekvensen) fuldført",
+    "Har (alle tjenester|dig) startet"
+  ],
+  "/intent/disable_ready_notification.intent": [
+    "(deaktiver|sluk|deaktiver) (klar|start|start|opstart|boot|indlæs|klarhed|startet|startet|indlæst) (lyd|meddelelse|tale|lyde|meddelelser)"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "(aktiver|tænd|aktiver) (klar|start|opstart|opstart|boot|indlæs|klarhed|startet|opstart|startet|indlæst) (lyd|meddelelse|tale|lyde|meddelelser)"
+  ]
+}

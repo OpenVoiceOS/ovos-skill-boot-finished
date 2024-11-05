@@ -1,0 +1,25 @@
+{
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Okay. Jeg holder op med at give dig besked, når jeg er klar."
+  ],
+  "/dialog/ready.dialog": [
+    "Jeg er klar!"
+  ],
+  "/dialog/confirm_ready.dialog": [
+    "Mit system er helt klar.",
+    "Alle tjenester er oppe og køre.",
+    "Mit system er klar til at gå.",
+    "Alt er oppe og operationelt.",
+    "Mit system er færdig med at starte op og er klar."
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Okay. Jeg vil fortælle dig, når jeg er klar efter genstart."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Mit system er ikke helt klar endnu.",
+    "Nogle tjenester starter stadig op.",
+    "Mit system starter stadig, vent venligst.",
+    "Ikke alt er klar endnu.",
+    "Systemet er ikke fuldt operationelt endnu, giv mig venligst lidt mere tid."
+  ]
+}
