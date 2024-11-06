@@ -27,20 +27,27 @@
 # SOFTWARE,  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import threading
 from time import monotonic, sleep
-from typing import Optional
+from typing import Dict, Optional
 
 from ovos_bus_client.message import Message
 from ovos_utils.log import LOG
 from ovos_workshop.decorators import intent_handler
 from ovos_workshop.skills import OVOSSkill
 
+from ovos_plugin_manager.skills import get_installed_skill_ids
+
 
 class BootFinishedSkill(OVOSSkill):
+    """Skill to handle the readiness status of various services in OVOS, such as
+    network, internet, and GUI connections, and notify users when the device is fully ready."""
+
     _connected_event = threading.Event()
     _network_event = threading.Event()
     _gui_event = threading.Event()
 
     def initialize(self):
+        """Initialize the skill by setting up event listeners for network, internet, GUI,
+        and device readiness, then triggers a device readiness check."""
         self.add_event("mycroft.network.connected", self.handle_network_connected)
         self.add_event("mycroft.internet.connected", self.handle_internet_connected)
         self.add_event("mycroft.gui.available", self.handle_gui_connected)
@@ -51,30 +58,33 @@ class BootFinishedSkill(OVOSSkill):
     def is_device_ready(self) -> bool:
         """Check if the device is ready by waiting for various services to start.
 
+        Different setups will have different needs
+         eg, a server does not care about audio
+         internet -> device is connected to the internet
+         network -> device is connected to the internet
+         gui_connected -> a gui client connected to the gui socket
+
+        any service using ProcessStatus class can also be added to ready_settings
+         skills -> skills reported ready
+         speech -> stt reported ready
+         audio -> audio playback reported ready
+         gui -> gui websocket reported ready
+         PHAL -> enclosure/HAL reported ready
+
+        specific skills can also be waited for via their skill_id
+
         Returns:
             bool: True if the device is ready, False otherwise.
         Raises:
             TimeoutError: If the device is not ready within a specified timeout.
         """
         is_ready = False
-        # Different setups will have different needs
-        # eg, a server does not care about audio
-        # internet -> device is connected to the internet
-        # network -> device is connected to the internet
-        # gui_connected -> a gui client connected to the gui socket
 
-        # any service using ProcessStatus class can also be added to ready_settings
-        # skills -> skills reported ready
-        # speech -> stt reported ready
-        # audio -> audio playback reported ready
-        # gui -> gui websocket reported ready
-        # PHAL -> enclosure/HAL reported ready
-
-        # TODO - allow requiring specific skills to be fully loaded
-        # skills might be loaded by core or run standalone, we should standardize how this is checked via bus
-        # perhaps ProcessStatus with skill_id ?
-        services = {k: False for k in
-                    self.settings.get("ready_settings", ["skills"])}
+        if "ready_settings" in self.settings:
+            services = {k: False for k in self.settings["ready_settings"]}
+        else:
+            services = {k: False for k in
+                        ["skills"] + get_installed_skill_ids(self.config_core)}
         start = monotonic()
         while not is_ready:
             is_ready = self.check_services_ready(services)
@@ -84,13 +94,14 @@ class BootFinishedSkill(OVOSSkill):
                 sleep(3)
         return is_ready
 
-    def check_services_ready(self, services):
-        """Report if all specified services are ready.
+    def check_services_ready(self, services: Dict[str, bool]) -> bool:
+        """Check if all specified services in the dictionary are ready.
 
         Args:
-            services (iterable): Service names to check.
+            services (Dict[str, bool]): Dictionary of service names and their readiness status.
+
         Returns:
-            bool: True if all specified services are ready, False otherwise.
+            bool: True if all services are ready, False otherwise.
         """
         for ser, rdy in services.items():
             if rdy:
@@ -112,39 +123,39 @@ class BootFinishedSkill(OVOSSkill):
                 services[ser] = True
         return all([services[ser] for ser in services])
 
-    def handle_gui_connected(self, message):
-        """Handle GUI connection event.
+    def handle_gui_connected(self, message: Message):
+        """Handle the event indicating the GUI client is connected.
 
         Args:
-            message: Message containing information about the GUI connection.
+            message (Message): Message indicating GUI connection status.
         """
         if not self._gui_event.is_set():
             LOG.debug("GUI Connected")
             self._gui_event.set()
 
-    def handle_internet_connected(self, message):
-        """Handle internet connection event.
+    def handle_internet_connected(self, message: Message):
+        """Handle the event indicating internet connectivity is established.
 
         Args:
-            message: Message containing information about the internet connection.
+            message (Message): Message indicating internet connection status.
         """
         if not self._connected_event.is_set():
             LOG.debug("Internet Connected")
             self._network_event.set()
             self._connected_event.set()
 
-    def handle_network_connected(self, message):
-        """Handle network connection event.
+    def handle_network_connected(self, message: Message):
+        """Handle the event indicating network connectivity is established.
 
         Args:
-            message: Message containing information about the network connection.
+            message (Message): Message indicating network connection status.
         """
         if not self._network_event.is_set():
             LOG.debug("Network Connected")
             self._network_event.set()
 
-    def handle_check_device_readiness(self, message: Optional[Message] = None):
-        """Handle the check device readiness event."""
+    def handle_check_device_readiness(self, message: Optional[Message] = None) -> None:
+        """Handle the event to check the device readiness status, emitting a ready signal if complete."""
         if self.is_device_ready():
             LOG.info("OVOS is all loaded and ready to roll!")
             self.bus.emit(Message('mycroft.ready'))
@@ -153,23 +164,28 @@ class BootFinishedSkill(OVOSSkill):
             self.bus.emit(Message('mycroft.ready.check'))
 
     @property
-    def speak_ready(self):
-        """
-        Speak `ready` dialog when ready unless disabled in settings
+    def speak_ready(self) -> bool:
+        """Return whether the device should speak a 'ready' message on startup.
+
+        Returns:
+            bool: True if ready notifications are enabled, False otherwise.
         """
         return self.settings.get("speak_ready", True)
 
     @property
-    def ready_sound(self):
-        """
-        play sound when ready unless disabled in settings
+    def ready_sound(self) -> bool:
+        """Return whether the device should play a sound when it is ready.
+
+        Returns:
+            bool: True if ready sound notifications are enabled, False otherwise.
         """
         return self.settings.get("ready_sound", True)
 
     def handle_ready(self, message: Message):
-        """
-        Handle mycroft.ready event. Notify the user everything is ready if
-        configured.
+        """Handle the mycroft.ready event to notify the user when all services are ready.
+
+        Args:
+            message (Message): Message indicating system readiness status.
         """
         if self.ready_sound:
             self.acknowledge()
