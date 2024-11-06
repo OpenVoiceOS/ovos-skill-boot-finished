@@ -2,17 +2,41 @@
 
 ## Summary
 
-The Finished Booting skill provides a notification when OpenVoiceOS (OVOS) has fully started and all core services are ready. This notification can be spoken to the user or simply logged, depending on the user's preferences.
+The Finished Booting skill provides notifications when OpenVoiceOS (OVOS) has fully started and all core services are ready. Notifications can be spoken, played as a sound, or simply logged, based on the user’s preferences.
 
 ## Description
 
-This skill ensures that users are informed when OVOS has completed booting and all essential services (such as network, GUI, and others) are ready for use. It provides a customizable ready notification that can be enabled or disabled via voice commands. The notification can be delivered either via a spoken message, sound, or visual cues on connected devices.
+This skill ensures users are informed when OVOS has completed booting and all essential services (such as network, GUI, and others) are ready for use. Users can configure the type of ready notification, which can be spoken, triggered as a sound, or displayed visually on compatible devices. Notifications can also be enabled or disabled via voice commands, making it easy to control the readiness alerts.
 
-### Key Features:
+### Key Features
 - Monitors system readiness by checking core services like network, internet, and GUI.
 - Notifies the user when OVOS is fully ready.
-- Allows users to enable or disable the ready notification via voice intents.
-- Configurable options for spoken readiness notifications and sound effects.
+- Enables or disables ready notifications via voice commands.
+- Offers configurable options for spoken readiness notifications and sound effects.
+
+
+## Configuration
+
+To customize the skill behavior, use the `settings.json` file.
+
+```javascript
+{
+  "speak_ready": true,        // Enables or disables spoken notifications for readiness
+  "ready_sound": true,         // Enables or disables sound notifications for readiness
+  "ready_settings": [
+    "skills",                  // Services to check before notifying readiness
+    "voice",
+    "audio",
+    "gui",
+    "internet"
+  ]
+}
+```
+
+The `ready_settings` option allows for flexible notifications based on the device’s role. For example, a server setup might only monitor core services, while a fully-featured OVOS device might wait for the GUI and audio stack. Specific skills can also be added to this list, ensuring the system only notifies readiness when those skills are loaded. 
+
+> If `ready_settings` is omitted, the skill defaults to waiting for `ovos-core` and **all installed skills** to be ready before sending a notification. 
+
 
 ## Voice Commands
 
@@ -20,7 +44,10 @@ This skill ensures that users are informed when OVOS has completed booting and a
   - Example: "Enable ready notifications."
   
 - **Disable Ready Notifications**: Deactivates the spoken notification.
-  - Example: "Disable load speech."
+  - Example: "Disable ready notifications."
+
+- **Check if System is Ready**: Inquires whether the system is fully ready.
+  - Example: "Is the system ready?"
 
 ## Examples
 
@@ -29,7 +56,9 @@ This skill ensures that users are informed when OVOS has completed booting and a
 - "Is the system ready?"
 
 ## Credits
+
 [NeonGeckoCom](https://github.com/NeonGeckoCom/skill-core_ready)
 
 ## Category
+
 **Daily**

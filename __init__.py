@@ -65,11 +65,11 @@ class BootFinishedSkill(OVOSSkill):
          gui_connected -> a gui client connected to the gui socket
 
         any service using ProcessStatus class can also be added to ready_settings
-         skills -> skills reported ready
-         speech -> stt reported ready
-         audio -> audio playback reported ready
-         gui -> gui websocket reported ready
-         PHAL -> enclosure/HAL reported ready
+         skills -> ovos-core reported ready
+         voice -> ovos-dinkum-listener reported ready
+         audio -> ovos-audio reported ready
+         gui -> ovos-gui websocket reported ready
+         PHAL -> PHAL reported ready
 
         specific skills can also be waited for via their skill_id
 
