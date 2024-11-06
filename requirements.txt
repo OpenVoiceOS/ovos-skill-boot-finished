@@ -1,3 +1,4 @@
-ovos-workshop<3.0.0
+ovos-workshop>=2.1.0,<3.0.0
 ovos-utils<2.0.0
 ovos-bus-client<2.0.0
+ovos-plugin-manager

@@ -37,6 +37,16 @@ The `ready_settings` option allows for flexible notifications based on the devic
 
 > If `ready_settings` is omitted, the skill defaults to waiting for `ovos-core` and **all installed skills** to be ready before sending a notification. 
 
+Valid ready settings options:
+- `internet` -> device is connected to the internet
+- `network` -> device is connected to local network, might not have internet
+- `gui_connected` -> a gui client connected to the gui socket
+- `skills` -> ovos-core reported ready
+- `voice` -> ovos-dinkum-listener reported ready
+- `audio` -> ovos-audio reported ready
+- `gui` -> ovos-gui websocket reported ready
+- `PHAL` -> PHAL reported ready
+- specific skills can also be waited for via their `skill_id`
 
 ## Voice Commands
 
