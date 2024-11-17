@@ -1,24 +1,28 @@
 # Changelog
 
-## [0.4.5a2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.5a2) (2024-11-05)
+## [0.4.7a2](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.7a2) (2024-11-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.5a1...0.4.5a2)
-
-**Merged pull requests:**
-
-- da-dk/translate [\#29](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/29) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.4.5a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.5a1) (2024-11-05)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.4.4...0.4.5a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.7a1...0.4.7a2)
 
 **Merged pull requests:**
 
-- fix:allow workshop 2.0.0 [\#30](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/30) ([JarbasAl](https://github.com/JarbasAl))
+- fix: skilljson [\#36](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/36) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.4.4](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.4.4) (2024-11-01)
+## [0.4.7a1](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/0.4.7a1) (2024-11-06)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.4...V0.4.4)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/V0.4.6...0.4.7a1)
+
+**Implemented enhancements:**
+
+- track skill loading status [\#33](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/issues/33)
+
+**Merged pull requests:**
+
+- fix: typing + wait for skills [\#34](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/pull/34) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.4.6](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/tree/V0.4.6) (2024-11-06)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-boot-finished/compare/0.4.6...V0.4.6)
 
 
 
