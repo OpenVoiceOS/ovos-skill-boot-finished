@@ -5,7 +5,21 @@
   "/dialog/ready.dialog": [
     "Ja estic llest!"
   ],
+  "/dialog/confirm_ready.dialog": [
+    "El sistema està totalment preparat.",
+    "Tots els serveis estan en funcionament.",
+    "El sistema està preparat per funcionar.",
+    "Tot està en funcionament i operatiu.",
+    "El sistema ha acabat d'engegar i està llest."
+  ],
   "/dialog/confirm_speak_ready.dialog": [
     "D'acord. Després de reiniciar, us diré quan estic preparat."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "El sistema encara no està completament preparat.",
+    "Alguns serveis encara estan engegant-se.",
+    "El sistema encara s'està engegant, espereu.",
+    "Encara no està tot preparat.",
+    "El sistema encara no està completament operatiu, si us plau, doneu-me una mica més de temps."
   ]
 }
