@@ -5,7 +5,21 @@
   "/dialog/ready.dialog": [
     "Sono pronto!"
   ],
+  "/dialog/confirm_ready.dialog": [
+    "Il sistema è pronto.",
+    "Tutti i servizi sono attivi e funzionanti.",
+    "Il sistema è pronto per l'uso.",
+    "Tutto è attivo e operativo.",
+    "Il sistema ha terminato l'avvio ed è pronto."
+  ],
   "/dialog/confirm_speak_ready.dialog": [
     "Va bene. Ti informerò quando sarò pronto dopo il prossimo riavvio."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Il sistema non è ancora completamente pronto.",
+    "Alcuni servizi sono ancora in fase di avvio.",
+    "Il sistema è ancora in fase di avvio. Per favore attendi un momento.",
+    "Non tutto è ancora pronto.",
+    "Il sistema non è ancora completamente operativo. Per favore dammi ancora un po' di tempo."
   ]
 }
