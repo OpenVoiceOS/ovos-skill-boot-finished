@@ -1,0 +1,20 @@
+{
+  "/intent/are_you_ready.intent": [
+    "Ist (Dein|das|Open Voice OS) System bereit",
+    "Hast (Du|alle Dienste|das System|Open Voice OS|das Gerät) den Bootvorgang abgeschlossen?",
+    "(Bist|Sind) (Du|alle Dienste) (bereit|vollständig geladen|wird noch geladen|ist aktiv)",
+    "(Hast Du|Hat das System) (den Start|das Laden|das Hochfahren|das Booten) abgeschlossen?",
+    "Ist alles (bereit|vollständig geladen|wird noch geladen|funktioniert)",
+    "Bist Du (mit dem Booten|dem Laden|dem Booten) fertig",
+    "Ist (das System|Open Voice OS|das Gerät) bereit",
+    "Hat (das System|Open Voice OS) erfolgreich gebootet",
+    "Ist der Bootvorgang abgeschlossen?",
+    "Sind alle Dienste gestartet"
+  ],
+  "/intent/disable_ready_notification.intent": [
+    "(Deaktiviere|schalte aus|ausschalten) (Ladebenachrichtigung|Boot-Benachrichtigung|Ladevorgangbenachrichtigung)"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "(Deaktiviere|schalte ein|einschalten) (Ladebenachrichtigung|Boot-Benachrichtigung|Ladevorgangbenachrichtigung)"
+  ]
+}
