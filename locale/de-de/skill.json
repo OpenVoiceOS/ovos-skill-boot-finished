@@ -1,0 +1,15 @@
+{
+  "skill_id": "skill-ovos-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/skill-ovos-boot-finished",
+  "name": "Finished Booting Skill",
+  "description": "Die Fertig-Boot-Funktion gibt Benachrichtigungen aus, wenn OpenVoiceOS vollständig gestartet ist und alle Kerndienste bereit sind",
+  "examples": [
+    "Ist das System bereit?",
+    "Aktiviere die Bereitschaftsbenachrichtigungen.",
+    "Deaktiviere Bereitschaftsbenachrichtigungen."
+  ],
+  "tags": [
+    "Diagnostik",
+    "Information"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "/dialog/confirm_no_speak_ready.dialog": [
+        "Vale. Deixarei de notificar cando estea listo."
+    ],
+    "/dialog/ready.dialog": [
+        "Estou listo!"
+    ],
+    "/dialog/confirm_ready.dialog": [],
+    "/dialog/confirm_speak_ready.dialog": [
+        "Vale. Dígoche cando estea listo despois de reiniciar."
+    ],
+    "/dialog/deny_ready.dialog": []
+}
