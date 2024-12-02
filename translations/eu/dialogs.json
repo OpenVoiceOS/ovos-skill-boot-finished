@@ -1,0 +1,13 @@
+{
+    "/dialog/confirm_no_speak_ready.dialog": [
+        "Okay. Jakinarazteari utziko diot prest nagoenean."
+    ],
+    "/dialog/ready.dialog": [
+        "Prest nago!"
+    ],
+    "/dialog/confirm_ready.dialog": [],
+    "/dialog/confirm_speak_ready.dialog": [
+        "Okay. Adieraziko dizut noiz nagoen prest berrabiarazteen ondoren."
+    ],
+    "/dialog/deny_ready.dialog": []
+}
