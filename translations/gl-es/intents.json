@@ -1,0 +1,9 @@
+{
+    "/intent/are_you_ready.intent": [],
+    "/intent/disable_ready_notification.intent": [
+        "(desactivar|desconectar|apagar) (son|notificación|fala|sons|notificacións) (de inicio|ao iniciar|do inicio|de arranque|de carga|que se prepararan|cargado|cargada|cargados|cargadas)"
+    ],
+    "/intent/enable_ready_notification.intent": [
+        "(activar|conectar|acender) (son|notificación|fala|sons|notificacións) (de inicio|ao iniciar|do inicio|de arranque|de carga|que se prepararan|cargado|cargada|cargados|cargadas)"
+    ]
+}
