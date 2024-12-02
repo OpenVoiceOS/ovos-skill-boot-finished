@@ -1,8 +1,22 @@
 # Changelog
 
+## [0.4.9a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.9a4) (2024-12-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a2...0.4.9a4)
+
+**Merged pull requests:**
+
+- import galician translations [\#47](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/47) ([JarbasAl](https://github.com/JarbasAl))
+- de-de/translate [\#46](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/46) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalan strings [\#45](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/45) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.4.9a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.9a2) (2024-11-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a1...0.4.9a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a3...0.4.9a2)
+
+## [0.4.9a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.9a3) (2024-11-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a1...0.4.9a3)
 
 **Merged pull requests:**
 
