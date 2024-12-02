@@ -1,8 +1,8 @@
 # Changelog
 
-## [0.4.9a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.9a4) (2024-12-02)
+## [0.4.9a5](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.9a5) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a2...0.4.9a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.9a2...0.4.9a5)
 
 **Merged pull requests:**
 
