@@ -1,8 +1,20 @@
 # Changelog
 
+## [0.4.10a5](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.10a5) (2025-02-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.10a4...0.4.10a5)
+
+**Merged pull requests:**
+
+- Translations update [\#58](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/58) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.10a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.10a4) (2025-02-27)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.10...0.4.10a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/V0.4.10a4...0.4.10a4)
+
+## [V0.4.10a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/V0.4.10a4) (2025-02-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.10...V0.4.10a4)
 
 **Merged pull requests:**
 
