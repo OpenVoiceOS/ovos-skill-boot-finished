@@ -1,9 +1,8 @@
 {
-    "/intent/are_you_ready.intent": [],
-    "/intent/disable_ready_notification.intent": [
-        "(desgaitu|itzali|desaktibatu) (prest|hasita|abiarazita|abian) dagoela adierazteko (soinua|jakinarazpena|bunbuiloa|soinuak|jakinarazpenak)"
-    ],
     "/intent/enable_ready_notification.intent": [
         "(gaitu|piztu|aktibatu) (prest|hasita|abiarazita|abian) dagoela adierazteko (soinua|jakinarazpena|bunbuiloa|soinuak|jakinarazpenak)"
+    ],
+    "/intent/disable_ready_notification.intent": [
+        "(desgaitu|itzali|desaktibatu) (prest|hasita|abiarazita|abian) dagoela adierazteko (soinua|jakinarazpena|bunbuiloa|soinuak|jakinarazpenak)"
     ]
 }

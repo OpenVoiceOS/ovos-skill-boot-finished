@@ -1,20 +1,20 @@
 {
-  "/intent/are_you_ready.intent": [
-    "Està preparat (el|es|) (vostre|) (Open Voice OS|sistema (de l'|de s')Open Voice OS)(?|)",
-    "(El sistema|Es sistema|L'Open Voice OS|S'OpenVoice OS|tots els serveis|tots els servicis) (ha|han) acabat d'(arrencar|engegar)(?|)",
-    "Estan tots (els|es) (serveis|servicis)(a punt|apunt|llestos|preparats)(?|)",
-    "(Has|El sistema ha) (acabat|finalitzat) (de carregar|de iniciar|seqüència d'engegada|seqüència d'arrencada)(?|)",
-    "(És|Està) tot (a punt|apunt| completament carregat|encara s'està carregant|en funcionament)(?|)",
-    "Has (finalitzat|acabat) (l'|s'|la |sa )(arrencada|engegada|seqüència d'arrencada|seqüència d'engegada)(?|)",
-    "Està (llest|preparat) (el sistema|Open Voice OS|el dispositiu)(?|)",
-    "(Ha|Has) (engegat|arrencat) (correctament|completament|bé) (Open Voice OS|el sistema|es sistema)(?|)",
-    "S'ha completat (el procès|es procès|la seqüència|sa seqüència) d'(arrencada|engegada)(?|)",
-    "S'han engegat tots els serveis(?|)"
-  ],
-  "/intent/disable_ready_notification.intent": [
-    "(desactiva|apaga|tanca|desconnecta|silencia) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)"
-  ],
-  "/intent/enable_ready_notification.intent": [
-    "(activa|engega|obre|connecta|no silenciïs|deixa de silenciar) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)"
-  ]
+    "/intent/are_you_ready.intent": [
+        "(El sistema|Es sistema|L'Open Voice OS|S'OpenVoice OS|tots els serveis|tots els servicis) (ha|han) acabat d'(arrencar|engegar)",
+        "(Has|El sistema ha) (acabat|finalitzat) (de carregar|de iniciar|seqüència d'engegada|seqüència d'arrencada)",
+        "(Ha|Has) (engegat|arrencat) (correctament|completament|bé) (Open Voice OS|el sistema|es sistema)",
+        "(És|Està) tot (a punt|apunt| completament carregat|encara s'està carregant|en funcionament)",
+        "Estan tots (els|es) (serveis|servicis)(a punt|apunt|llestos|preparats)",
+        "Està (llest|preparat) (el sistema|Open Voice OS|el dispositiu)",
+        "Està preparat (el|es|) (vostre|) (Open Voice OS|sistema (de l'|de s')Open Voice OS)",
+        "Has (finalitzat|acabat) (l'|s'|la |sa )(arrencada|engegada|seqüència d'arrencada|seqüència d'engegada)",
+        "S'ha completat (el procès|es procès|la seqüència|sa seqüència) d'(arrencada|engegada)",
+        "S'han engegat tots els serveis"
+    ],
+    "/intent/enable_ready_notification.intent": [
+        "(activa|engega|obre|connecta|no silenciïs|deixa de silenciar) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)"
+    ],
+    "/intent/disable_ready_notification.intent": [
+        "(desactiva|apaga|tanca|desconnecta|silencia) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)"
+    ]
 }
