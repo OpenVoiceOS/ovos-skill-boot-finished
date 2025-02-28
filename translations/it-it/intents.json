@@ -1,8 +1,8 @@
 {
-  "/intent/disable_ready_notification.intent": [
-    "(disattiva|togli|spegni|rimuovi|disabilita) le notifiche (all'avvio|al riavvio|all'accensione|al caricamento)"
-  ],
-  "/intent/enable_ready_notification.intent": [
-    "(attiva|rimetti|avvia|metti|abilita) le notifiche (all'avvio|al riavvio|all'accensione|al caricamento)"
-  ]
+    "/intent/enable_ready_notification.intent": [
+        "(attiva|rimetti|avvia|metti|abilita) le notifiche (all'avvio|al riavvio|all'accensione|al caricamento)"
+    ],
+    "/intent/disable_ready_notification.intent": [
+        "(disattiva|togli|spegni|rimuovi|disabilita) le notifiche (all'avvio|al riavvio|all'accensione|al caricamento)"
+    ]
 }
