@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.11a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.11a1) (2025-05-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.10a5...0.4.11a1)
+
+**Merged pull requests:**
+
+- fix: standardize urls / skill-id / pypi-name [\#60](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/60) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.10a5](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.10a5) (2025-02-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.10a4...0.4.10a5)
