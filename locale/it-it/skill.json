@@ -1,6 +1,6 @@
 {
-  "skill_id": "skill-ovos-boot-finished.openvoiceos",
-  "source": "https://github.com/OpenVoiceOS/skill-ovos-boot-finished",
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
   "name": "Competenza Fine di avvio",
   "description": "La competenza Fine di avvio fornisce notifiche quando OpenVoiceOS è completamente avviato e tutti i servizi principali sono pronti",
   "examples": [
