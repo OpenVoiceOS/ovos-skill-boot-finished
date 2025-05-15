@@ -1,8 +1,8 @@
 {
-    "/intent/disable_ready_notification.intent": [
-        "(desativar|desligar|desativar) (o|a|os|as|) (som|notificação|fala|sons|notificações) de (início|inicialização)"
-    ],
     "/intent/enable_ready_notification.intent": [
         "(habilitar|ligar|ativar) (o|a|os|as|) (som|notificação|sons|notificações) de (início|inicialização)"
+    ],
+    "/intent/disable_ready_notification.intent": [
+        "(desativar|desligar|desativar) (o|a|os|as|) (som|notificação|fala|sons|notificações) de (início|inicialização)"
     ]
 }

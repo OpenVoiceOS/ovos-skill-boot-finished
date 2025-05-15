@@ -1,6 +1,6 @@
 {
-  "skill_id": "skill-ovos-boot-finished.openvoiceos",
-  "source": "https://github.com/OpenVoiceOS/skill-ovos-boot-finished",
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
   "name": "Færdig booting færdighed",
   "description": "Færdigheden til færdig opstart giver besked, når OpenVoiceOS er fuldt startet, og alle kernetjenester er klar",
   "examples": [

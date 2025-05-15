@@ -1,8 +1,8 @@
 {
-    "/intent/disable_ready_notification.intent": [
-        "(désactiver|éteindre|arreter) (le|la|les|) (son|notification|avis|sons|notifications) de (démarrage|redémarrage)"
-    ],
     "/intent/enable_ready_notification.intent": [
         "(activer|allumer|reactiver) (le|la|les|) (son|notification|avis|sons|notifications) de (démarrage|redémarrage)"
+    ],
+    "/intent/disable_ready_notification.intent": [
+        "(désactiver|éteindre|arreter) (le|la|les|) (son|notification|avis|sons|notifications) de (démarrage|redémarrage)"
     ]
 }

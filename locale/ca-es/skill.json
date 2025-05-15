@@ -1,6 +1,6 @@
 {
-  "skill_id": "skill-ovos-boot-finished.openvoiceos",
-  "source": "https://github.com/OpenVoiceOS/skill-ovos-boot-finished",
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
   "name": "Habilitat d'engegada finalitzada",
   "description": "L'habilitat d'engegada acabada proporciona notificacions quan l'OpenVoiceOS s'ha iniciat completament i tots els serveis bàsics estan preparats",
   "examples": [
