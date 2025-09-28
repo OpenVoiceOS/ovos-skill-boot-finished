@@ -10,7 +10,7 @@
 
 ## [0.5.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.1a1) (2025-09-28)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/V0.5.0...0.5.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.0...0.5.1a1)
 
 **Closed issues:**
 
@@ -21,10 +21,6 @@
 
 - es-es/translate [\#65](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/65) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Update pt-BR [\#64](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/64) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [V0.5.0](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/V0.5.0) (2025-05-15)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.0...V0.5.0)
 
 
 
