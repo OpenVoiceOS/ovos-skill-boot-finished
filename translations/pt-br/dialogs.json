@@ -1,11 +1,25 @@
 {
-    "/dialog/confirm_no_speak_ready.dialog": [
-        "Entendi. Vou parar de notificá-lo quando acabar de reiniciar"
-    ],
-    "/dialog/ready.dialog": [
-        "Estou pronto!"
-    ],
-    "/dialog/confirm_speak_ready.dialog": [
-        "Okay. Vou notificá-lo quando estiver pronto sempre que reiniciar"
-    ]
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Entendi. Vou parar de notificá-lo quando acabar de reiniciar"
+  ],
+  "/dialog/ready.dialog": [
+    "Estou pronto!"
+  ],
+  "/dialog/confirm_ready.dialog": [
+    "Meu sistema está totalmente pronto.",
+    "Todos os serviços estão funcionando.",
+    "Meu sistema está pronto para uso.",
+    "Tudo está funcionando e operacional.",
+    "Meu sistema terminou de inicializar e está pronto."
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Okay. Vou notificá-lo quando estiver pronto sempre que reiniciar"
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Meu sistema ainda não está totalmente pronto.",
+    "Alguns serviços ainda estão inicializando.",
+    "Meu sistema ainda está inicializando, aguarde.",
+    "Nem tudo está pronto ainda.",
+    "O sistema ainda não está totalmente operacional. Por favor, aguarde mais um momento."
+  ]
 }
