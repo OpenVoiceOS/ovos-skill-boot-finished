@@ -1,0 +1,20 @@
+{
+  "/intent/are_you_ready.intent": [
+    "(el sistema|tu|Open Voice OS) (ha|has) iniciado correctamente",
+    "(Tu|El sistema) (has|ha) terminado de (iniciar|cargar|arrancar) (la|el) (secuencia de arranque|arranque)",
+    "(Estás|Están) (todos) (los servicios) (listo|listos|completamente cargado|completamente cargado|todavía cargando|en funcionamiento)",
+    "¿(Tu | todos los servicios | el sistema | Open Voice OS | el dispositivo) (terminó|terminaste) de (iniciarse|iniciarte)?",
+    "¿(Has|Ha|Han) comenzado (tu|usted|todos los servicios)?",
+    "¿(Ha|Has) terminado (el arranque | la carga | la secuencia de arranque)?",
+    "¿(Está|Estás) (el sistema|Open Voice OS|el dispositivo) listo?",
+    "(Está|Estás) (el sistema|Open Voice OS) listo",
+    "¿Está todo (listo|completamente cargado|todavía cargando|en funcionamiento)?",
+    "¿Está completo (el|la) (proceso de/secuencia de) arranque ?"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "(habilitar|activar|encender) (sonido|notificación|voz|sonidos|notificaciones) (de) (listo|inicio|arranque|carga|preparado|iniciado|arrancado|cargado)"
+  ],
+  "/intent/disable_ready_notification.intent": [
+    "(deshabilitar|apagar|desactivar) (sonido|notificación|voz|sonidos|notificaciones) (de) (listo|inicio|arranque|carga|preparado|iniciado|arrancado|cargado)"
+  ]
+}

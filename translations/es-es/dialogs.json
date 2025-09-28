@@ -1,0 +1,25 @@
+{
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Está bien. Dejaré de avisarte cuando esté listo."
+  ],
+  "/dialog/ready.dialog": [
+    "¡Estoy listo!"
+  ],
+  "/dialog/confirm_ready.dialog": [
+    "Mi sistema está completamente listo.",
+    "Todos los servicios están en funcionamiento.",
+    "Mi sistema está listo para funcionar.",
+    "Todo está listo y operativo.",
+    "Mi sistema ha terminado de iniciarse y está listo."
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Está bien. Te diré cuando esté listo después de reiniciar."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Mi sistema aún no está completamente listo.",
+    "Algunos servicios todavía están en fase de inicio.",
+    "Mi sistema aún se está iniciando, por favor espere.",
+    "No todo está listo todavía",
+    "El sistema aún no está completamente operativo, por favor dame algo más de tiempo."
+  ]
+}
