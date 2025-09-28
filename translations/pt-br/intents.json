@@ -1,8 +1,20 @@
 {
-    "/intent/enable_ready_notification.intent": [
-        "(habilitar|ligar|ativar) (o|a|os|as|) (som|notificação|sons|notificações) de (início|inicialização)"
-    ],
-    "/intent/disable_ready_notification.intent": [
-        "(desativar|desligar|desativar) (o|a|os|as|) (som|notificação|fala|sons|notificações) de (início|inicialização)"
-    ]
+  "/intent/are_you_ready.intent": [
+    "(O sistema|você|OpenVoiceOS) inicializou com sucesso?",
+    "(Você|O sistema) terminou (de iniciar|de carregar|de inicializar|a sequência de inicialização)?",
+    "(Vocês|todos os serviços) estão (prontos|totalmente carregados|ainda carregando|em funcionamento)?",
+    "(Você|Todos os serviços|O sistema|OpenVoiceOS|O dispositivo) terminou de inicializar?",
+    "(Todos os serviços inicializaram|você inicializou)?",
+    "Você terminou (a inicialização|o carregamento|a sequência de inicialização)?",
+    "(O sistema|OpenVoiceOS|o dispositivo) está pronto?",
+    "(O sistema|O seu sistema|OpenVoiceOS) está pronto?",
+    "Tudo está (pronto|totalmente carregado|ainda carregando|em funcionamento)?",
+    "(O processo|a sequência) de inicialização completou?"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "(habilitar|ligar|ativar) (o|a|os|as|) (som|notificação|sons|notificações) de (início|inicialização)"
+  ],
+  "/intent/disable_ready_notification.intent": [
+    "(desativar|desligar|desativar) (o|a|os|as|) (som|notificação|fala|sons|notificações) de (início|inicialização)"
+  ]
 }
