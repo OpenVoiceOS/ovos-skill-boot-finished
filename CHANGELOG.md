@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.1a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.1a2) (2025-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.1a1...0.5.1a2)
+
+**Merged pull requests:**
+
+- gl/translate [\#63](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/63) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.5.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.1a1) (2025-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/V0.5.0...0.5.1a1)
