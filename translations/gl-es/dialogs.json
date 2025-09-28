@@ -1,13 +1,25 @@
 {
-    "/dialog/confirm_no_speak_ready.dialog": [
-        "Vale. Deixarei de notificar cando estea listo."
-    ],
-    "/dialog/ready.dialog": [
-        "Estou listo!"
-    ],
-    "/dialog/confirm_ready.dialog": [],
-    "/dialog/confirm_speak_ready.dialog": [
-        "Vale. Dígoche cando estea listo despois de reiniciar."
-    ],
-    "/dialog/deny_ready.dialog": []
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "Vale. Deixarei de notificar cando estea listo."
+  ],
+  "/dialog/ready.dialog": [
+    "Estou listo!"
+  ],
+  "/dialog/confirm_ready.dialog": [
+    "O meu sistema está completamente listo.",
+    "Todos os servizos están en funcionamento.",
+    "O meu sistema está listo para funcionar.",
+    "Todo está listo e operativo.",
+    "O meu sistema rematou de arrancar e está listo."
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "Vale. Dígoche cando estea listo despois de reiniciar."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "O meu sistema aínda non está completamente listo.",
+    "Algúns servizos aínda están a poñerse en marcha.",
+    "O meu sistema aínda está a arrancar. Agarda, por favor.",
+    "Aínda non está todo listo.",
+    "O sistema aínda non está totalmente operativo. Por favor, dame máis tempo."
+  ]
 }
