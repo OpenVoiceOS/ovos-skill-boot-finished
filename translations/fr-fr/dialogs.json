@@ -1,11 +1,21 @@
 {
-    "/dialog/confirm_no_speak_ready.dialog": [
-        "D'accord. Je vais arreter de vous avertir lorsque le démarrage est terminé."
-    ],
-    "/dialog/ready.dialog": [
-        "Je suis prêt !"
-    ],
-    "/dialog/confirm_speak_ready.dialog": [
-        "Okay. Je vais vous avertir à chaque fois que je suis prêt lorsque le démarrage est terminé."
-    ]
+  "/dialog/confirm_no_speak_ready.dialog": [
+    "D'accord. Je ne vous avertirai plus quand le démarrage sera terminé."
+  ],
+  "/dialog/ready.dialog": [
+    "Le système est prêt."
+  ],
+  "/dialog/confirm_ready.dialog": [
+    "Tous les services sont démarrés et opérationnels.",
+    "Le système a terminé de démarrer et il est prêt.",
+    "Tout est chargé et prêt à fonctionner."
+  ],
+  "/dialog/confirm_speak_ready.dialog": [
+    "D'accord. Je vous avertirai quand le système sera prêt."
+  ],
+  "/dialog/deny_ready.dialog": [
+    "Le système n'est pas encore complètement prêt.",
+    "Le démarrage est encore en cours, patientez un instant.",
+    "Certains services finissent encore de se lancer."
+  ]
 }
