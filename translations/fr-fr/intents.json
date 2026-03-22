@@ -1,8 +1,17 @@
 {
-    "/intent/enable_ready_notification.intent": [
-        "(activer|allumer|reactiver) (le|la|les|) (son|notification|avis|sons|notifications) de (démarrage|redémarrage)"
-    ],
-    "/intent/disable_ready_notification.intent": [
-        "(désactiver|éteindre|arreter) (le|la|les|) (son|notification|avis|sons|notifications) de (démarrage|redémarrage)"
-    ]
+  "/intent/are_you_ready.intent": [
+    "Est-ce que le système est prêt",
+    "Est-ce qu'Open Voice OS a bien démarré",
+    "Est-ce que tous les services sont prêts",
+    "Le démarrage est-il terminé",
+    "Le système a-t-il fini de démarrer",
+    "Est-ce que le système a fini de démarrer",
+    "Est-ce qu'Open Voice OS est prêt"
+  ],
+  "/intent/enable_ready_notification.intent": [
+    "(active|activer|allume|allumer|réactive|réactiver) (la notification|les notifications|l'alerte|les alertes|notification|notifications|alerte|alertes) de (démarrage|redémarrage)"
+  ],
+  "/intent/disable_ready_notification.intent": [
+    "(désactive|désactiver|éteins|éteindre|arrête|arrêter) (la notification|les notifications|l'alerte|les alertes|notification|notifications|alerte|alertes) de (démarrage|redémarrage)"
+  ]
 }
