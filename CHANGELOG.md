@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.2a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.2a1) (2026-03-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.1a2...0.5.2a1)
+
+**Merged pull requests:**
+
+- fix: rename bare lang code locale directories [\#70](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/70) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- Complete French boot status locale [\#68](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/68) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [0.5.1a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.1a2) (2025-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.1a1...0.5.1a2)
