@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.3a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.3a2) (2026-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.3a1...0.5.3a2)
+
+**Merged pull requests:**
+
+- ci: modernize GitHub workflows [\#79](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/79) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#78](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/78) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.3a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.3a1) (2026-03-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.2a1...0.5.3a1)
@@ -27,17 +36,16 @@
 
 ## [0.5.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.1a1) (2025-09-28)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.0...0.5.1a1)
-
-**Closed issues:**
-
-- "is the systen ready" don't speak. [\#22](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/issues/22)
-- Doesn't speak when ready. [\#21](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/issues/21)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/V0.5.0...0.5.1a1)
 
 **Merged pull requests:**
 
 - es-es/translate [\#65](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/65) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Update pt-BR [\#64](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/64) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [V0.5.0](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/V0.5.0) (2025-05-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.0...V0.5.0)
 
 
 
