@@ -19,9 +19,9 @@ class TestSkillLoading(unittest.TestCase):
     def test_from_class(self):
         bus = FakeBus()
         skill = BootFinishedSkill()
-        # Patch handle_check_device_readiness to prevent the infinite
-        # ready-check loop that would hang the test process
-        with patch.object(skill, 'handle_check_device_readiness'):
+        # Prevent the infinite ready-check loop during startup
+        with patch.object(skill, 'handle_check_device_readiness',
+                          lambda *a, **k: None):
             skill._startup(bus, self.skill_id)
         self.assertEqual(skill.bus, bus)
         self.assertEqual(skill.skill_id, self.skill_id)
