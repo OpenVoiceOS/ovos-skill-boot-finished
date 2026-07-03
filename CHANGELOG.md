@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.5a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a2) (2026-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a1...0.5.5a2)
+
+**Merged pull requests:**
+
+- chore: add ovoscope end2end intent-routing tests [\#83](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/83) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.5a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a1) (2026-07-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.4a1...0.5.5a1)
