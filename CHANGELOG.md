@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.5a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a1) (2026-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.4a1...0.5.5a1)
+
+**Merged pull requests:**
+
+- fix\(intents\): consolidate readiness intents and fix INTENT-1 grammar errors [\#86](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/86) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.4a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.4a1) (2026-06-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.3a3...0.5.4a1)
