@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.5a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a3) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a2...0.5.5a3)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#89](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/89) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.5a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a2) (2026-07-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a1...0.5.5a2)
