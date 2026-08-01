@@ -2,22 +2,22 @@
 
 ## Summary
 
-The Finished Booting skill provides notifications when OpenVoiceOS (OVOS) has fully started and all core services are ready. Notifications can be spoken, played as a sound, or simply logged, based on the user’s preferences.
+This skill notifies you when OpenVoiceOS (OVOS) finishes booting and all core services are ready. It can speak the notification, play a sound, or just log the event, based on your settings.
 
 ## Description
 
-This skill ensures users are informed when OVOS has completed booting and all essential services (such as network, GUI, and others) are ready for use. Users can configure the type of ready notification, which can be spoken, triggered as a sound, or displayed visually on compatible devices. Notifications can also be enabled or disabled via voice commands, making it easy to control the readiness alerts.
+The skill checks core services, such as network, internet, and GUI, and tells you when OVOS is ready to use. You can configure the type of ready notification: spoken, a sound effect, or a visual signal on devices that support it. Voice commands turn the readiness alerts on or off.
 
 ### Key Features
-- Monitors system readiness by checking core services like network, internet, and GUI.
-- Notifies the user when OVOS is fully ready.
-- Enables or disables ready notifications via voice commands.
-- Offers configurable options for spoken readiness notifications and sound effects.
 
+- Monitors system readiness by checking core services, such as network, internet, and the GUI.
+- Notifies you when OVOS is fully ready.
+- Turns ready notifications on or off through voice commands.
+- Lets you configure spoken readiness notifications and sound effects.
 
 ## Configuration
 
-To customize the skill behavior, use the `settings.json` file.
+Use the `settings.json` file to change the skill behavior.
 
 ```javascript
 {
@@ -33,30 +33,31 @@ To customize the skill behavior, use the `settings.json` file.
 }
 ```
 
-The `ready_settings` option allows for flexible notifications based on the device’s role. For example, a server setup might only monitor core services, while a fully-featured OVOS device might wait for the GUI and audio stack. Specific skills can also be added to this list, ensuring the system only notifies readiness when those skills are loaded. 
+The `ready_settings` option lets you tailor notifications to the role of the device. For example, a server setup can monitor only core services, while a full OVOS device can wait for the GUI and audio stack. You can also add specific skills to this list, so the skill only reports readiness once those skills load.
 
-> If `ready_settings` is omitted, the skill defaults to waiting for `ovos-core` and **all installed skills** to be ready before sending a notification. 
+If you omit `ready_settings`, the skill waits for `ovos-core` and all installed skills to be ready before it sends a notification.
 
-Valid ready settings options:
-- `internet` -> device is connected to the internet
-- `network` -> device is connected to local network, might not have internet
-- `gui_connected` -> a gui client connected to the gui socket
-- `skills` -> ovos-core reported ready
-- `voice` -> ovos-dinkum-listener reported ready
-- `audio` -> ovos-audio reported ready
-- `gui` -> ovos-gui websocket reported ready
-- `PHAL` -> PHAL reported ready
-- specific skills can also be waited for via their `skill_id`
+Valid `ready_settings` values:
+
+- `internet`: the device is connected to the internet.
+- `network`: the device is connected to the local network, but might not have internet.
+- `gui_connected`: a GUI client connected to the GUI socket.
+- `skills`: ovos-core reported ready.
+- `voice`: ovos-dinkum-listener reported ready.
+- `audio`: ovos-audio reported ready.
+- `gui`: the ovos-gui websocket reported ready.
+- `PHAL`: PHAL reported ready.
+- A specific skill's `skill_id` waits for that skill to load.
 
 ## Voice Commands
 
-- **Enable Ready Notifications**: Activates the spoken notification when OVOS is ready.
+- **Enable Ready Notifications**: Turns on the spoken notification for when OVOS is ready.
   - Example: "Enable ready notifications."
-  
-- **Disable Ready Notifications**: Deactivates the spoken notification.
+
+- **Disable Ready Notifications**: Turns off the spoken notification.
   - Example: "Disable ready notifications."
 
-- **Check if System is Ready**: Inquires whether the system is fully ready.
+- **Check if System is Ready**: Asks whether the system is fully ready.
   - Example: "Is the system ready?"
 
 ## Examples
@@ -64,6 +65,12 @@ Valid ready settings options:
 - "Enable ready notifications."
 - "Disable ready speech."
 - "Is the system ready?"
+
+## Related Projects
+
+- [OpenVoiceOS/ovos-core](https://github.com/OpenVoiceOS/ovos-core): the OVOS assistant framework this skill reports readiness for.
+- [OpenVoiceOS/ovos-gui](https://github.com/OpenVoiceOS/ovos-gui): provides the `gui` and `gui_connected` readiness signals.
+- [OpenVoiceOS/ovos-PHAL](https://github.com/OpenVoiceOS/ovos-PHAL): provides the `PHAL` readiness signal.
 
 ## Credits
 
