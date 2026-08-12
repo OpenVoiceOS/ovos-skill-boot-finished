@@ -53,10 +53,14 @@ class TestBootFinishedIntentsEnUS(unittest.TestCase):
         return capture.finish()
 
     def _assert_intent(self, text, intent):
+        # dispatched ovos.intent.matched intent names carry no ".intent"
+        # suffix (OVOS-INTENT-2 naming) -- strip it so this assertion tracks
+        # the real bus event instead of the on-disk container filename.
+        intent = intent[:-len(".intent")] if intent.endswith(".intent") else intent
         messages = self._run(text)
         types = [m.msg_type for m in messages]
         self.assertIn(f"{SKILL_ID}:{intent}", types)
-        self.assertTrue(any("speak" in t for t in types))
+        self.assertTrue(any(t == "ovos.utterance.speak" for t in types))
 
     def test_are_you_ready(self):
         self._assert_intent("are you ready", "are_you_ready.intent")
