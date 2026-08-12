@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.5a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a4) (2026-08-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a3...0.5.5a4)
+
+**Merged pull requests:**
+
+- test: add golden-utterance e2e suite \(en-US\) [\#91](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/91) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.5a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a3) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a2...0.5.5a3)
