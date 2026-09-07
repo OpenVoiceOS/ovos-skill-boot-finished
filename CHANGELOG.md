@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.6.0a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a8...0.6.0a1)
+
+**Merged pull requests:**
+
+- feat: sv-SE locale parity [\#100](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/100) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.5a8](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a8) (2026-08-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a6...0.5.5a8)
