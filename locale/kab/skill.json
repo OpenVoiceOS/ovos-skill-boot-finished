@@ -1,7 +1,15 @@
 {
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Asenker yekfa",
+  "description": "Askar-agi ițțak-d isallen mi ara yekfu usenker n OpenVoiceOS yerna imukan meṛṛa ddan yerna țeddun.",
   "examples": [
     "Ma yewjed unagraw?",
     "Rmed ilɣa n uwjeb.",
     "Sens ilɣa n uwjeb."
+  ],
+  "tags": [
+    "diagnostics",
+    "information"
   ]
 }
