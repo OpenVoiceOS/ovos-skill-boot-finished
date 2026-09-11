@@ -1,8 +1,0 @@
-{
-    "/intent/enable_ready_notification.intent": [
-        "(habilitar | ligar | ativar) (som|notificação|sons|notificações) de (inicio|iniciar)"
-    ],
-    "/intent/disable_ready_notification.intent": [
-        "(desativar|desligar|desativar) (som|notificação|fala|sons|notificações) de (inicio|iniciar)"
-    ]
-}

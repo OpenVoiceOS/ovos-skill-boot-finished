@@ -70,6 +70,10 @@ setup(
     package_data={SKILL_PKG: find_resource_files()},
     packages=[SKILL_PKG],
     include_package_data=True,
+    extras_require={
+        "test": ["ovos-bus-client", "ovoscope>=0.7.0"],
+        "dev": ["ovos-bus-client", "ovoscope>=0.7.0"],
+    },
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
