@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Askill n Usali Yefukken",
+  "description": "Askill n Usali Yefukken yettak-d talɣut ticki OpenVoiceOS yefukk asali yerna akk tanfa n lsas heggant",
+  "examples": [
+    "Yefukk usali n unagraw?",
+    "Rmed tinabatin n tehegga.",
+    "Sens tinabatin n tehegga."
+  ],
+  "tags": [
+    "diagnostics",
+    "information"
+  ]
+}
