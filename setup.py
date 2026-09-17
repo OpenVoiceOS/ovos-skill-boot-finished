@@ -71,8 +71,8 @@ setup(
     packages=[SKILL_PKG],
     include_package_data=True,
     extras_require={
-        "test": ["ovos-bus-client", "ovoscope>=0.7.0"],
-        "dev": ["ovos-bus-client", "ovoscope>=0.7.0"],
+        "test": ["ovos-bus-client", "ovoscope>=1.8.0a1,<2.0.0"],
+        "dev": ["ovos-bus-client", "ovoscope>=1.8.0a1,<2.0.0"],
     },
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
