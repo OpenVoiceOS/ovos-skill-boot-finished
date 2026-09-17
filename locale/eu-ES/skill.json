@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Abioa amaituta trebetasuna",
+  "description": "Abioa amaituta trebetasunak jakinarazpenak ematen ditu OpenVoiceOS erabat abiarazi denean eta oinarrizko zerbitzu guztiak prest daudenean",
+  "examples": [
+    "Sistema prest al dago?",
+    "Gaitu prest jakinarazpenak.",
+    "Desgaitu prest jakinarazpenak."
+  ],
+  "tags": [
+    "diagnostikoa",
+    "informazioa"
+  ]
+}
