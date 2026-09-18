@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.7.0a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.6.1a1...0.7.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill kab and pt-PT gaps against en-US [\#106](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/106) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.6.1a1) (2026-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.6.0a1...0.6.1a1)
