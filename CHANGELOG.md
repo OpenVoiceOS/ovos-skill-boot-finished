@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.7.1a1) (2026-09-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.7.0a2...0.7.1a1)
+
+**Merged pull requests:**
+
+- fix: declare runtime dependencies in pyproject.toml [\#102](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/102) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.7.0a2) (2026-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.7.0a1...0.7.0a2)
