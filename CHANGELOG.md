@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.0a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.8.0a1) (2026-09-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.7.1a1...0.8.0a1)
+
+**Merged pull requests:**
+
+- feat: add missing kab locale resources for file parity with en-US [\#104](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/104) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.7.1a1) (2026-09-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.7.0a2...0.7.1a1)
