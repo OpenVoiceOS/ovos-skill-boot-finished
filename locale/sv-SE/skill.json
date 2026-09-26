@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Färdigstartad-skill",
+  "description": "Färdigstartad-skillen ger meddelanden när OpenVoiceOS har startat helt och alla kärntjänster är redo",
+  "examples": [
+    "Är systemet redo?",
+    "Aktivera redomeddelanden.",
+    "Inaktivera redomeddelanden."
+  ],
+  "tags": [
+    "diagnostik",
+    "information"
+  ]
+}
