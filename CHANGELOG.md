@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.0a3) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a2...0.9.0a3)
+
+**Merged pull requests:**
+
+- locale: draft fa-IR pl-PL ru-RU from en-US \(machine translation, unvouched\) [\#116](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/116) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.0a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.0a2) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a1...0.9.0a2)
