@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Finished Booting Skill",
+  "description": "The Finished Booting skill provides notifications when OpenVoiceOS has fully started and all core services are ready",
+  "examples": [
+    "Ты готов?",
+    "Отключить готовый звук",
+    "приготовить звук"
+  ],
+  "tags": [
+    "diagnostics",
+    "information"
+  ]
+}
