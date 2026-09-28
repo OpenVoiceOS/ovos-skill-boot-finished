@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.0a4) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a3...0.9.0a4)
+
+**Merged pull requests:**
+
+- locale: skill.json for the drafted locales, from their own intent lines [\#118](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/118) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.0a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.0a3) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a2...0.9.0a3)
@@ -74,19 +82,19 @@
 
 ## [0.5.5a8](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a8) (2026-08-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a6...0.5.5a8)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a7...0.5.5a8)
 
 **Merged pull requests:**
 
 - translate\(kab\): update ready.dialog [\#96](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/96) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
 
-## [0.5.5a6](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a6) (2026-08-26)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a7...0.5.5a6)
-
 ## [0.5.5a7](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a7) (2026-08-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a5...0.5.5a7)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a6...0.5.5a7)
+
+## [0.5.5a6](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a6) (2026-08-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a5...0.5.5a6)
 
 **Merged pull requests:**
 
