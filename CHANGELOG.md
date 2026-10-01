@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.1a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.1a1) (2026-10-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a4...0.9.1a1)
+
+**Merged pull requests:**
+
+- fix\(fa-IR\): strip the terminal question mark from the intent templates [\#121](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/121) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.0a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.0a4) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.0a3...0.9.0a4)
