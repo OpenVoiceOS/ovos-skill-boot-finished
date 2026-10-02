@@ -28,10 +28,12 @@ dynamic = ["version"]
 test = [
     "ovos-bus-client",
     "ovoscope>=0.7.0",
+    "pytest-timeout>=2.0",
 ]
 dev = [
     "ovos-bus-client",
     "ovoscope>=0.7.0",
+    "pytest-timeout>=2.0",
 ]
 
 [project.urls]
