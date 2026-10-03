@@ -86,7 +86,7 @@ class BootFinishedSkill(OVOSSkill):
             # A blacklisted skill is installed but never loaded, so it never
             # answers mycroft.<skill_id>.is_ready: waiting on it would keep the
             # device from ever reporting ready.
-            blacklist = set(self.config_core.get("skills", {}).get("blacklisted_skills") or [])
+            blacklist = set((self.config_core.get("skills") or {}).get("blacklisted_skills") or [])
             services = {k: False for k in
                         ["skills"] + [skill_id for skill_id in get_installed_skill_ids(self.config_core)
                                       if skill_id not in blacklist]}

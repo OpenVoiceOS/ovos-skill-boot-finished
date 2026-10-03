@@ -53,3 +53,28 @@ class TestSkillLoading(unittest.TestCase):
         finally:
             skill.shutdown()
         self.assertEqual(set(waited_on), {"skills", "loaded.openvoiceos"})
+
+    def test_is_device_ready_tolerates_a_null_skills_section(self):
+        """`skills: null` in mycroft.conf must not break the readiness check."""
+        bus = FakeBus()
+        skill = BootFinishedSkill()
+        with patch.object(skill, 'handle_check_device_readiness',
+                          lambda *a, **k: None):
+            skill._startup(bus, self.skill_id)
+        waited_on = {}
+
+        def check(services):
+            waited_on.update(services)
+            return True
+
+        try:
+            with patch("ovos_skill_boot_finished.get_installed_skill_ids",
+                       return_value=["loaded.openvoiceos"]), \
+                    patch.object(skill, "config_core", {"skills": None}), \
+                    patch.object(skill, "check_services_ready", side_effect=check):
+                skill.settings.pop("ready_settings", None)
+                self.assertTrue(skill.is_device_ready())
+        finally:
+            skill.shutdown()
+        self.assertEqual(set(waited_on), {"skills", "loaded.openvoiceos"})
+
