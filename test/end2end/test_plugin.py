@@ -26,3 +26,30 @@ class TestSkillLoading(unittest.TestCase):
         self.assertEqual(skill.bus, bus)
         self.assertEqual(skill.skill_id, self.skill_id)
         skill.shutdown()
+
+    def test_is_device_ready_skips_blacklisted_skills(self):
+        """A blacklisted skill is installed but never loads, so it can never
+        answer mycroft.<skill_id>.is_ready; waiting on it would keep the device
+        from ever reporting ready."""
+        bus = FakeBus()
+        skill = BootFinishedSkill()
+        with patch.object(skill, 'handle_check_device_readiness',
+                          lambda *a, **k: None):
+            skill._startup(bus, self.skill_id)
+        waited_on = {}
+
+        def check(services):
+            waited_on.update(services)
+            return True
+
+        config = {"skills": {"blacklisted_skills": ["blocked.openvoiceos"]}}
+        try:
+            with patch("ovos_skill_boot_finished.get_installed_skill_ids",
+                       return_value=["loaded.openvoiceos", "blocked.openvoiceos"]), \
+                    patch.object(skill, "config_core", config), \
+                    patch.object(skill, "check_services_ready", side_effect=check):
+                skill.settings.pop("ready_settings", None)
+                self.assertTrue(skill.is_device_ready())
+        finally:
+            skill.shutdown()
+        self.assertEqual(set(waited_on), {"skills", "loaded.openvoiceos"})
