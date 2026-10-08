@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Habilidade \"Rematado o arranque\"",
+  "description": "A habilidade \"Rematado o arranque\" proporciona notificacións cando OpenVoiceOS acaba de iniciarse por completo e todos os servizos principais están listos",
+  "examples": [
+    "Está (listo|preparado) o sistema?",
+    "Activar (as|) notificacións de estado.",
+    "Desactivar (as|) notificacións de estado."
+  ],
+  "tags": [
+    "diagnósticos",
+    "información"
+  ]
+}
