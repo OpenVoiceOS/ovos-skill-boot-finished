@@ -29,10 +29,6 @@ test = [
     "ovos-bus-client",
     "ovoscope>=0.7.0",
 ]
-dev = [
-    "ovos-bus-client",
-    "ovoscope>=0.7.0",
-]
 
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-skill-boot-finished"
