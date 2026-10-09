@@ -1,1 +1,5 @@
-opstart (geluid|melding|meldingen)(inschakelen|activeren)
+opstart(geluid|melding|meldingen) (inschakelen|activeren)
+(laat me weten|zeg me|meld) wanneer je (klaar bent|opgestart bent)
+(zet|schakel) het opstartgeluid (weer|) (aan|in)
+schakel de opstartmelding (weer|) in
+ik wil (een melding|een geluid) als je (opgestart bent|klaar bent met opstarten)

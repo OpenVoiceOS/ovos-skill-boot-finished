@@ -1,1 +1,6 @@
 (enable|turn on|activate) (ready|start|startup|start up|boot|load|readiness|started|booted|loaded) (sound|notification|speech|sounds|notifications)
+(let me know|tell me|notify me) when (you are|you're) (ready|done booting|done starting up)
+(announce|say) (it|so) when (you are|you're) (ready|done booting)
+(turn|switch) (the|) (startup|boot|ready) (announcement|message|sound) (back on|on)
+I want (to hear|to get) (a sound|a notification|an announcement) when you (are ready|have booted)
+play a sound when (you are|you're) ready

@@ -1,1 +1,8 @@
 (disable|turn off|deactivate) (ready|start|startup|start up|boot|load|readiness|started|booted|loaded) (sound|notification|speech|sounds|notifications)
+(stop|quit) (letting me know|announcing) when (you are|you're) (ready|done booting)
+quit telling me when (you are|you're) (ready|done booting)
+(do not|don't) (tell me|announce|say) when (you are|you're) (ready|done booting)
+(turn|switch) (the|) (startup|boot|ready) (announcement|message|sound) off
+I (do not|don't) (want|need) (the|a) (startup|boot|ready) (sound|announcement) (anymore|any more)
+I (do not|don't) want (the|a) (boot|ready) message (anymore|any more)
+(mute|silence) the (startup|boot|ready) (sound|announcement)

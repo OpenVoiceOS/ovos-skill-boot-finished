@@ -1,1 +1,7 @@
 (desactiva|apaga|tanca|desconnecta|silencia) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)
+deixa de (dir-me|notificar-me) quan (estiguis a punt|hagis arrencat)
+(desactiva|lleva) l'avís d'(arrencada|inici)
+no vull (cap avís|sentir cap so) (en arrencar|quan arrenquis)
+no avisis quan (estiguis a punt|acabis d'arrencar)
+(treu|elimina) el so d'(arrencada|inici)
+no em diguis res quan (estiguis a punt|arrenquis)
