@@ -83,8 +83,13 @@ class BootFinishedSkill(OVOSSkill):
         if "ready_settings" in self.settings:
             services = {k: False for k in self.settings["ready_settings"]}
         else:
+            # A blacklisted skill is installed but never loaded, so it never
+            # answers mycroft.<skill_id>.is_ready: waiting on it would keep the
+            # device from ever reporting ready.
+            blacklist = set((self.config_core.get("skills") or {}).get("blacklisted_skills") or [])
             services = {k: False for k in
-                        ["skills"] + get_installed_skill_ids(self.config_core)}
+                        ["skills"] + [skill_id for skill_id in get_installed_skill_ids(self.config_core)
+                                      if skill_id not in blacklist]}
         start = monotonic()
         while not is_ready:
             is_ready = self.check_services_ready(services)
