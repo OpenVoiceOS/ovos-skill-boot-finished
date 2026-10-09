@@ -1,1 +1,4 @@
-(habilitar | ligar | ativar) (som|notificação|sons|notificações) de (inicio|iniciar)
+(habilitar|ligar|ativar) (som|notificação|sons|notificações) de (início|arranque)
+(avisa-me|diz-me|informa-me) quando (já estiveres pronto|acabares o arranque|tiveres arrancado)
+(liga|ativa) (outra vez|de novo) o (aviso|som) de arranque
+quero (ser avisado|ouvir um aviso) quando (estiveres pronto|acabares de arrancar)

@@ -1,1 +1,7 @@
-opstart (geluid|melding|meldingen)(uitschakelen|deactiveren)
+opstart(geluid|melding|meldingen) (uitschakelen|deactiveren)
+hou op met (melden|zeggen) (dat je klaar bent|wanneer je opgestart bent)
+stop met zeggen dat je klaar bent
+(zet|schakel) het opstartgeluid uit
+schakel de opstartmelding uit
+ik wil (geen opstartmelding|geen opstartgeluid) meer
+meld (niet meer|niets) (wanneer je klaar bent|als je klaar bent)
