@@ -1,1 +1,11 @@
 (enable|turn on|activate) (ready|start|startup|start up|boot|load|readiness|started|booted|loaded) (sound|notification|speech|sounds|notifications)
+(announce|say) (it|so) when (you are|you're) (ready|done booting)
+play a sound when (you are|you're) ready
+say something (once|as soon as) (the boot|startup) (completes|is complete)
+give me a (heads up|notice) (once|as soon as) you (have started|come up)
+(bring back|restore) the (ready|startup|boot) (notification|announcement|message)
+(inform|alert) me (once|as soon as) (you have|the system has) (started|loaded)
+(re-enable|reactivate) the (ready|startup|boot) (notification|announcement)
+I'd like to be (told|informed) (once|as soon as) you are up
+please (announce|tell me) (once|as soon as) the system is (online|available)
+I want (an alert|a notification) (once|as soon as) (startup|booting) (completes|is over)

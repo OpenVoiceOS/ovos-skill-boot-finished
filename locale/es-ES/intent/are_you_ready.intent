@@ -1,10 +1,37 @@
 (Estás|Están) [todos] [los servicios] (listo|listos|completamente cargado|todavía cargando|en funcionamiento)
 (Está|Estás) (el sistema|Open Voice OS) listo
-(Tu|El sistema) (has|ha) terminado de (iniciar|cargar|arrancar) (la|el) (secuencia de arranque|arranque)
-(el sistema|tu|Open Voice OS) (ha|has) iniciado correctamente
+(Has|El sistema ha) terminado (de iniciar|de cargar|de arrancar|la secuencia de arranque|el arranque)
 ¿(Está|Estás) (el sistema|Open Voice OS|el dispositivo) listo?
 ¿(Has|Ha|Han) comenzado (tu|usted|todos los servicios)?
-¿(Ha|Has) terminado (el arranque | la carga | la secuencia de arranque)?
-¿(Tu | todos los servicios | el sistema | Open Voice OS | el dispositivo) (terminó|terminaste) de (iniciarse|iniciarte)?
+¿(Ha|Has) terminado (el arranque|la carga|la secuencia de arranque)?
+¿(Terminaste de iniciarte|Todos los servicios terminaron de iniciarse|El sistema terminó de iniciarse|Open Voice OS terminó de iniciarse|El dispositivo terminó de iniciarse)?
 ¿(Está completo el proceso|Está completa la secuencia) de arranque?
 ¿Está todo (listo|completamente cargado|todavía cargando|en funcionamiento)?
+(el sistema|Open Voice OS) ha iniciado correctamente
+¿(puedo empezar a|ya se puede) (hablarte|darte órdenes)?
+¿ya estás (en marcha|operativo) del todo?
+¿(continúas|aún estás) (iniciándote|poniéndote en marcha)?
+¿(qué tal|cómo) ha (salido|resultado) el (inicio|encendido)?
+¿funcionan ya todos los servicios?
+¿funciona ya el sistema?
+¿el asistente ya está (disponible|operativo)?
+¿ya (estás|está el sistema) en línea?
+¿han arrancado ya todos los servicios?
+El sistema ha terminado de iniciar la secuencia de arranque
+# machine-translated (linguonnx, unreviewed)
+Son (tú|todos los servicios) (listo|completamente cargado|todavía cargando|en funcionamiento)
+Es (todo|el sistema|el dispositivo|su sistema|Abrir el sistema operativo de voz) (listo|completamente cargado|todavía cargando|en funcionamiento)
+Es la bota (proceso|secuencia) completa
+Tiene (el sistema|el dispositivo|Abrir el sistema operativo de voz) terminado (arranque|carga|inicio|puesta en marcha|la secuencia de arranque)
+Tener (tú|todos los servicios) terminado (arranque|carga|inicio|puesta en marcha|la secuencia de arranque)
+Did (tú|todos los servicios|el sistema|el dispositivo|Abrir el sistema operativo de voz) terminar el arranque
+(Tiene|Did) (el sistema|el dispositivo|Abrir el sistema operativo de voz) arrancar con éxito
+Tener (tú|todos los servicios) iniciado
+(eres tú|es el sistema) (listo para|capaz de tomar) (comandos|solicitudes) (aún no|)
+tiene (la|tu) (inicio|arranque) (completado|envueltos)
+es (la|tu) (inicio|arranque) (completa|sobre) (ahora|aún no)
+eres tú (todavía|) calentamiento
+es (todo|todos los servicios) (cargado|ejecutar) (ahora|aún no)
+cómo está el (inicio|arranque) en marcha
+son todos (tu|la) servicios (arriba|en línea) (ahora|)
+es el asistente de voz (en línea|disponible) (ahora|aún no)
