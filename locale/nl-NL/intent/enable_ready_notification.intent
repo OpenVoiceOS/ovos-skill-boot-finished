@@ -1,1 +1,14 @@
-opstart (geluid|melding|meldingen)(inschakelen|activeren)
+opstart(geluid|melding|meldingen) (inschakelen|activeren)
+geef een seintje zodra je (operationeel|gereed) bent
+(activeer|herstel) de (gereedmelding|startaankondiging)
+ik hoor graag iets zodra (het systeem draait|alles werkt)
+kondig aan (wanneer|zodra) je (gereed|operationeel) bent
+stuur me een (melding|bericht) zodra je (online|bereikbaar) bent
+speel een (geluid|signaal) af na het opstarten
+# machine-translated (linguonnx, unreviewed)
+zeg iets (eenmaal|zo snel als) (de laars|opstarten) (voltooit|is voltooid)
+geef me een (heads up|kennisgeving) (eenmaal|zo snel als) u (zijn begonnen|kom maar naar boven)
+(terughalen|herstellen) de (klaar|opstarten|boot) (kennisgeving|aankondiging|bericht)
+(op de hoogte stellen|alarm) me (eenmaal|zo snel als) (je hebt|het systeem heeft) (gestart|geladen)
+(opnieuw inschakelen|reactiveren) de (klaar|opstarten|boot) (kennisgeving|aankondiging)
+alsjeblieft (kondigen|vertel het me) (eenmaal|zo snel als) het systeem is (online|beschikbaar)

@@ -1,24 +1,29 @@
 Jesteś gotowy.
 Wszystkie usługi są gotowe
 Jesteś w pełni załadowany
-Wciąż załadujesz
 Wszystko jest gotowe
 Czy system jest gotowy
 Urządzenie jest gotowe
 Czy twój system jest gotowy
-Czy proces zakończony jest
-Czy system zakończył się uruchomieniem
-Urządzenie skończyło się uruchomieniem
-Czy system zakończył się wczytaniem
-Czy urządzenie zakończyło się wczytaniem
-Skończyłaś rozkładanie
-Skończyłeś wczytanie
-Skończyłeś już rozpocząć
-Wszystkie usługi zostały zakończone
-Czy wszystkie usługi skończyły rozkładanie
-Czy urządzenie skończyło rozkładanie
+Czy proces uruchamiania jest zakończony
+Czy system zakończył uruchamianie
+Urządzenie skończyło uruchamianie
+Czy system zakończył wczytywanie
+Czy urządzenie zakończyło wczytywanie
+Skończyłaś uruchamianie
+Skończyłeś wczytywanie
+Skończyłeś już startować
+Wszystkie usługi zostały uruchomione
+Czy wszystkie usługi skończyły uruchamianie
+Czy urządzenie skończyło uruchamianie
 Czy system został pomyślnie uruchomiony
 Udało się uruchomić system
 Udało się uruchomić urządzenie
 Zaczynasz?
 Czy wszystkie usługi rozpoczęły się
+mogę już cię używać
+czy (nadal|wciąż) trwa (uruchamianie|ładowanie)
+czy mogę zacząć z tobą rozmawiać
+czy system (już|) działa (w pełni|normalnie)
+jak (poszło|idzie) uruchamianie
+czy jesteś już w pełni (uruchomiony|gotowy do pracy)

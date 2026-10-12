@@ -1,1 +1,21 @@
-(Deaktiviere|schalte ein|einschalten) (Ladebenachrichtigung|Boot-Benachrichtigung|Ladevorgangbenachrichtigung)
+Aktiviere (die|) (Ladebenachrichtigung|Boot-Benachrichtigung|Ladevorgangbenachrichtigung)
+(Ladebenachrichtigung|Boot-Benachrichtigung|Ladevorgangbenachrichtigung) einschalten
+Gib mir (ein Zeichen|eine Rückmeldung) sobald du (startklar|betriebsbereit) bist
+Die Ansage nach dem (Hochfahren|Neustart) (bitte|) wieder (aktivieren|einschalten)
+Informiere mich sobald (das System|alles) (läuft|gestartet ist)
+Gib (wieder|) Bescheid sobald du (gestartet|einsatzbereit) bist
+Aktiviere die (Startansage|Bereitschaftsmeldung) (bitte|) (erneut|)
+Ich möchte (benachrichtigt|informiert) werden sobald du (online|einsatzbereit) bist
+Benachrichtige mich (nach dem Hochfahren|nach jedem Neustart)
+Spiel einen Ton ab sobald du gestartet bist
+# machine-translated (linguonnx, unreviewed)
+(bekanntgeben|sagen) (Es wird|) wenn (du wirst|Du bist) (bereit|Booten beendet)
+einen Ton zu spielen, wenn (du wirst|Du bist) bereit
+Sag etwas (einmal|sobald) (der Kofferraum|Starten) (abgeschlossen|ist abgeschlossen)
+Gib mir eine (Kopf hoch|Hinweis) (einmal|sobald) Sie (begonnen haben|Kommen Sie hoch)
+(zurückbringen|Wiederherstellung) die (bereit|Starten|Booten) (Benachrichtigung|Ankündigung|Nachricht)
+(informieren|Warnung) ich (einmal|sobald) (Sie haben|das System hat) (begonnen|geladen)
+(Wiederverwendbar|reaktivieren) die (bereit|Starten|Booten) (Benachrichtigung|Ankündigung)
+Ich würde gerne sein (Erklärt|informiert) (einmal|sobald) du bist bereit
+Bitte (bekanntgeben|Sag es mir) (einmal|sobald) Das System ist (online|verfügbar)
+Ich will (eine Ausschreibung|eine Mitteilung) (einmal|sobald) (Starten|Booten) (abgeschlossen|ist vorbei)

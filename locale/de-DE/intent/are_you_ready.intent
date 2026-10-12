@@ -1,10 +1,38 @@
-(Bist|Sind) (Du|alle Dienste) (bereit|vollständig geladen|wird noch geladen|ist aktiv)
+(Bist Du|Sind alle Dienste) (bereit|vollständig geladen|noch am Laden|aktiv)
 (Hast Du|Hat das System) (den Start|das Laden|das Hochfahren|das Booten) abgeschlossen
-Bist Du (mit dem Booten|dem Laden|dem Booten) fertig
+Bist Du (mit dem Booten|mit dem Laden|mit dem Hochfahren) fertig
 Hast (Du|alle Dienste|das System|Open Voice OS|das Gerät) den Bootvorgang abgeschlossen
 Hat (das System|Open Voice OS) erfolgreich gebootet
 Ist (Dein|das|Open Voice OS) System bereit
 Ist (das System|Open Voice OS|das Gerät) bereit
-Ist alles (bereit|vollständig geladen|wird noch geladen|funktioniert)
+Ist alles (bereit|vollständig geladen|noch am Laden|in Betrieb)
 Ist der Bootvorgang abgeschlossen
 Sind alle Dienste gestartet
+Bist du noch (am Laden|am Hochfahren)
+Bist du (inzwischen|mittlerweile) (betriebsbereit|startklar)
+Ist (das Hochfahren|der Systemstart) (inzwischen|mittlerweile) abgeschlossen
+Funktioniert (alles|das System) nach dem (Neustart|Hochfahren)
+Kann ich (jetzt|endlich) mit dir (reden|sprechen)
+Sind alle (Dienste|Komponenten) (geladen|einsatzbereit)
+Wie weit bist du mit dem Hochfahren
+Ist das System (schon|) online
+Bist du (jetzt|) (erreichbar|ansprechbar)
+Läuft der Assistent (inzwischen|mittlerweile)
+Sind (die|alle) Dienste (schon|) hochgefahren
+# machine-translated (linguonnx, unreviewed)
+Ist (alles|das System|das Gerät|Ihr System|Offenes Sprach-Betriebssystem) (bereit|voll geladen|noch geladen|up and running)
+Ist der Stiefel (Prozess|Reihenfolge) vollständig
+Hat (das System|das Gerät|Offenes Sprach-Betriebssystem) fertig (Booten|Laden|Beginn|Beginnen|die Boot-Sequenz)
+Haben (Sie|alle Dienstleistungen) fertig (Booten|Laden|Beginn|Beginnen|die Boot-Sequenz)
+Ich hab's geschafft (Sie|alle Dienstleistungen|das System|das Gerät|Offenes Sprach-Betriebssystem) Booten beenden
+(Hat|Ich hab's geschafft) (das System|das Gerät|Offenes Sprach-Betriebssystem) erfolgreich booten
+Haben (Sie|alle Dienstleistungen) begonnen
+(kann ich|darf ich) (nutzen Sie|Sprich mit dir) (Jetzt|bereits)
+(Bist du|ist das System) (bereit für|in der Lage zu nehmen) (Befehle|Anträge) (Noch nicht|)
+hat (die|Ihres) (Starten|Booten) (abgeschlossen|verpackt)
+wird (die|Ihres) (Starten|Booten) (vollständig|Über) (Jetzt|Noch nicht)
+Bist du (immer noch|) Aufwärmen
+wird (alles|jeden Dienst) (geladen|läuft) (Jetzt|Noch nicht)
+Wie ist die (Starten|Booten) Gehst du
+sind alle (Ihres|die) Dienstleistungen (nach oben|online) (Jetzt|)
+ist der Sprachassistent (online|verfügbar) (Jetzt|Noch nicht)

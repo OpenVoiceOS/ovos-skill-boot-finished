@@ -1,1 +1,18 @@
-(aktivera|slå på) (redo|start|startup|uppstart|laddnings) (ljud|meddelande|tal|ljud|meddelanden)
+(aktivera|slå på) (redo|start|uppstart|laddnings) (ljud|meddelande|tal|meddelanden)
+jag vill (få ett meddelande|höra något) när du (är redo|har startat)
+ge mig ett (tecken|besked) så fort du är (igång|i drift)
+återaktivera (redomeddelandet|startaviseringen)
+jag skulle vilja (få veta|höra) när systemet är igång
+tala om (när|så fort) systemet (är igång|fungerar)
+jag vill få (en avisering|ett meddelande) när systemet har startat
+avisera mig (när|så fort) du är (online|i drift)
+spela (ett ljud|en signal) när uppstarten är klar
+# machine-translated (linguonnx, unreviewed)
+säg nåt (en gång|så snart som möjligt) (kängan|start) (hela|är fullständig)
+ge mig en till (upp med huvudet|meddelande) (en gång|så snart som möjligt) du själv (har börjat|kom upp)
+(föra tillbaka|återställa) och (färdig|start|uppstart) (anmälan|tillkännagivande|meddelande)
+(informera|varning) jag (en gång|så snart som möjligt) (du har|systemet har) (påbörjad|laddad)
+(återaktivera@ info: whatsthis|återaktivera) och (färdig|start|uppstart) (anmälan|tillkännagivande)
+Jag skulle vilja vara (berättade|informerad) (en gång|så snart som möjligt) du är uppe
+snälla (tillkännage|berätta) (en gång|så snart som möjligt) systemet är (online|tillgängliga)
+Jag vill ha (en registrering|en anmälan) (en gång|så snart som möjligt) (start|uppstart) (hela|är över)
