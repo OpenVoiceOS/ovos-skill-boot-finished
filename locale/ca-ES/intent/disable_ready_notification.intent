@@ -1,1 +1,1 @@
-(desactiva|apaga|tanca|desconnecta|silencia) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'|de l'|a l'|de )(inici|engegada|a punt|apunt|estar apunt|estar llest|estar preparat|càrrega)
+(desactiva|apaga|tanca|desconnecta|silencia) (la |sa |les |ses |l'|s'|el |els |ses )(notificació|notificacions|avís|avisos|so|sons|missatge|missatges) (d'inici|de l'inici|a l'inici|d'engegada|de l'engegada|a l'engegada|d'arrencada|de l'arrencada|de càrrega|de la càrrega|(d'|de |a l'|de l')estar (a punt|apunt|llest|preparat))
