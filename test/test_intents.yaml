@@ -1,4 +1,12 @@
 en-us:
+  are_you_ready.intent:
+    - are you ready
+    - is the system ready
+    - is everything up and running
+    - is the boot process complete
+    - has Open Voice OS finished booting
+    - have all services started
+    - did the device finish booting
   enable_ready_notification.intent:
     - enable ready notifications
     - turn on boot notification
