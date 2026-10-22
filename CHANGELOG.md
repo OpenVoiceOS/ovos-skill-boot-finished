@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.9.3a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.3a1) (2026-10-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.2a1...0.9.3a1)
+
+**Merged pull requests:**
+
+- fix: separate enable and disable ready-notification intents [\#128](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/128) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(ca-ES\): ready-notification intents expand to 880 lines, not 22,528 [\#127](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/127) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [0.9.2a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.2a1) (2026-10-08)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.1a2...0.9.2a1)
@@ -106,19 +115,19 @@
 
 ## [0.5.5a8](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a8) (2026-08-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a7...0.5.5a8)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a6...0.5.5a8)
 
 **Merged pull requests:**
 
 - translate\(kab\): update ready.dialog [\#96](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/96) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
 
-## [0.5.5a7](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a7) (2026-08-26)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a6...0.5.5a7)
-
 ## [0.5.5a6](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a6) (2026-08-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a5...0.5.5a6)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a7...0.5.5a6)
+
+## [0.5.5a7](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.5.5a7) (2026-08-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.5.5a5...0.5.5a7)
 
 **Merged pull requests:**
 
