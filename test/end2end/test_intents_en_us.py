@@ -1,15 +1,15 @@
 """End-to-end intent routing tests for the en-US locale.
 
 Each canonical utterance is fired through a real MiniCroft and asserted to
-route to the expected intent handler and produce a spoken response. Assertions
-cover the intent binding and the presence of a ``speak`` response.
+route to the expected intent handler and produce a spoken response.
 """
 import unittest
 from unittest.mock import patch
 
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
-from ovoscope import CaptureSession, get_minicroft
+from ovoscope import CaptureSession
+from ovoscope.routing import PIPELINE, TALLY, get_prototype_minicroft
 
 SKILL_ID = "ovos-skill-boot-finished.openvoiceos"
 LANG = "en-US"
@@ -28,7 +28,7 @@ class TestBootFinishedIntentsEnUS(unittest.TestCase):
             new=lambda self, *args, **kwargs: True,
         )
         cls._ready_patch.start()
-        cls.minicroft = get_minicroft([SKILL_ID])
+        cls.minicroft = get_prototype_minicroft([SKILL_ID], lang=LANG)
 
     @classmethod
     def tearDownClass(cls):
@@ -39,10 +39,7 @@ class TestBootFinishedIntentsEnUS(unittest.TestCase):
     def _run(self, text):
         session = Session("test-session")
         session.lang = LANG
-        session.pipeline = [
-            "ovos-padacioso-pipeline-plugin-high",
-            "ovos-padacioso-pipeline-plugin-medium",
-        ]
+        session.pipeline = PIPELINE
         utterance = Message(
             "recognizer_loop:utterance",
             {"utterances": [text], "lang": LANG},
@@ -53,13 +50,9 @@ class TestBootFinishedIntentsEnUS(unittest.TestCase):
         return capture.finish()
 
     def _assert_intent(self, text, intent):
-        # dispatched ovos.intent.matched intent names carry no ".intent"
-        # suffix (OVOS-INTENT-2 naming) -- strip it so this assertion tracks
-        # the real bus event instead of the on-disk container filename.
-        intent = intent[:-len(".intent")] if intent.endswith(".intent") else intent
         messages = self._run(text)
         types = [m.msg_type for m in messages]
-        self.assertIn(f"{SKILL_ID}:{intent}", types)
+        TALLY.assert_routed(text, f"{SKILL_ID}:{intent}", types)
         self.assertTrue(any(t == "ovos.utterance.speak" for t in types))
 
     def test_are_you_ready(self):
