@@ -1,12 +1,19 @@
 # Changelog
 
+## [0.9.3a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.3a4) (2026-10-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.3a3...0.9.3a4)
+
+**Merged pull requests:**
+
+- test: natural golden rows and negative rows for every locale [\#133](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/133) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.3a3](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.3a3) (2026-10-29)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.3a2...0.9.3a3)
 
 **Merged pull requests:**
 
-- test: natural golden rows and negative rows for every locale [\#133](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/133) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 - test: assert the dialog and the setting of each en-US intent [\#132](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/132) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 
 ## [0.9.3a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.3a2) (2026-10-29)
