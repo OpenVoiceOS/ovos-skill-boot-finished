@@ -1,6 +1,8 @@
+import os
+import tempfile
 import unittest
 from threading import Event
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 from ovos_bus_client.message import Message
 from ovos_utils.messagebus import FakeBus
@@ -18,8 +20,23 @@ class TestSkill(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.skill = BootFinishedSkill()
-        cls.skill._startup(cls.bus, cls.skill_id)
+        # Private XDG tree: the skill settings come from a clean file, not
+        # from the settings of the user who runs the tests.
+        xdg = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(xdg.cleanup)
+        env = {var: os.path.join(xdg.name, var.lower()) for var in (
+            "XDG_CONFIG_HOME", "XDG_DATA_HOME", "XDG_CACHE_HOME", "XDG_STATE_HOME")}
+        env_patch = patch.dict(os.environ, env)
+        env_patch.start()
+        cls.addClassCleanup(env_patch.stop)
+
+        # initialize() emits mycroft.ready.check, which FakeBus delivers
+        # synchronously. The real handler polls the services for up to 60s
+        # and then re-emits the check forever, so it must not run here.
+        with patch.object(BootFinishedSkill, "handle_check_device_readiness",
+                          lambda self, message=None: None):
+            cls.skill = BootFinishedSkill()
+            cls.skill._startup(cls.bus, cls.skill_id)
         cls.skill.speak = Mock()
         cls.skill.speak_dialog = Mock()
 

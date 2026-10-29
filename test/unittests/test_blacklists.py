@@ -11,7 +11,7 @@ import pytest
 from ovos_spec_tools.expansion import expand
 from ovos_spec_tools.resources import read_resource_file, utterance_contains
 
-LOCALE = Path(__file__).resolve().parents[1] / "locale"
+LOCALE = Path(__file__).resolve().parents[2] / "locale"
 LANGS = sorted(p.parent.parent.name
                for p in LOCALE.glob("*/intent/enable_ready_notification.blacklist"))
 SAMPLES_PER_LINE = 40
