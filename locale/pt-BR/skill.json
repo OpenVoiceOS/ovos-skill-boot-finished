@@ -1,0 +1,15 @@
+{
+  "skill_id": "ovos-skill-boot-finished.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-boot-finished",
+  "name": "Skill de inicialização finalizada",
+  "description": "A skill de inicialização finalizada fornece notificações quando OpenVoiceOS reiniciou completamente and todos os serviços básicos estão prontos",
+  "examples": [
+    "O sistema está pronto?",
+    "Habilitar notificações prontas.",
+    "Desabilite as notificações prontas."
+  ],
+  "tags": [
+    "diagnósticos",
+    "Informação"
+  ]
+}
