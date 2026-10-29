@@ -1,33 +1,80 @@
-"""Golden-utterance end-to-end coverage for ovos-skill-boot-finished (en-US).
-
-The golden corpus (``golden_utterances.jsonl``) is a vendored slice of the
-shared ovoscope golden-utterance dataset, keyed by
-``skill_id == "ovos-skill-boot-finished.openvoiceos"``. One shared
-``MiniCroft`` (module-scoped fixture) is booted for the whole suite; every
-row is its own parametrized test item.
-
-Dispatched ``ovos.intent.matched`` intent names carry no ``.intent`` suffix
-(OVOS-INTENT-2 naming) even though the golden corpus's ``intent_label``
-field still stores the on-disk container filename -- the suffix is stripped
-before comparison, matching the fix applied to ``test_intents_en_us.py``.
-"""
+"""Golden rows route to their intent on the m2v prototype pipeline, and
+negative rows reach no intent of this skill."""
 import json
 from pathlib import Path
 from unittest.mock import patch
 
 import pytest
 from ovos_bus_client.message import Message
-from ovos_bus_client.session import Session
-from ovoscope import CaptureSession, get_minicroft
+from ovoscope.routing import TALLY, get_prototype_minicroft
 
 SKILL_ID = "ovos-skill-boot-finished.openvoiceos"
-LANG = "en-US"
+END2END_DIR = Path(__file__).parent
 
-GOLDEN_PATH = Path(__file__).parent / "golden_utterances.jsonl"
 
-# utterances lifted verbatim from OTHER skills' golden-utterance slices,
-# picked for lexical overlap with boot-finished's "ready"/"notification"/
-# "enable"/"disable" vocabulary.
+def _rows(prefix):
+    rows = []
+    for path in sorted(END2END_DIR.glob(f"{prefix}*.jsonl")):
+        rows += [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+                 if line.strip()]
+    return rows
+
+
+GOLDEN = _rows("golden_utterances_")
+NEGATIVE = _rows("negative_utterances_")
+_booted = {}
+
+
+@pytest.fixture(scope="module", autouse=True)
+def _device_ready():
+    # is_device_ready() waits for services a MiniCroft never starts, which
+    # blocks the skill load
+    with patch("ovos_skill_boot_finished.BootFinishedSkill.is_device_ready",
+               new=lambda self, *args, **kwargs: True):
+        yield
+
+
+@pytest.fixture(scope="module")
+def engine_for():
+    def engine(lang):
+        if lang not in _booted:
+            for minicroft in _booted.values():
+                minicroft.stop()
+            _booted.clear()
+            _booted[lang] = get_prototype_minicroft([SKILL_ID], lang=lang)
+        return _booted[lang].intents.pipeline_plugins["ovos-m2v-prototype-pipeline"]
+    yield engine
+    for minicroft in _booted.values():
+        minicroft.stop()
+
+
+def _routed(engine, utterance, lang):
+    message = Message("recognizer_loop:utterance",
+                      {"utterances": [utterance], "lang": lang}, {"lang": lang})
+    match = engine.match_low([utterance], lang, message)
+    return [match.match_type] if match else []
+
+
+def _row_id(row):
+    return f"{row['lang']}:{row['utterance']}"
+
+
+@pytest.mark.parametrize("row", GOLDEN, ids=_row_id)
+def test_golden_row_routes_to_its_intent(engine_for, row):
+    fired = _routed(engine_for(row["lang"]), row["utterance"], row["lang"])
+    TALLY.assert_routed(row["utterance"], f"{SKILL_ID}:{row['intent_label']}", fired)
+
+
+@pytest.mark.parametrize("row", NEGATIVE, ids=_row_id)
+def test_negative_row_reaches_no_intent_of_the_skill(engine_for, row):
+    fired = _routed(engine_for(row["lang"]), row["utterance"], row["lang"])
+    TALLY.assert_not_routed(row["utterance"],
+                            [t for t in fired if t.startswith(f"{SKILL_ID}:")], fired)
+
+
+# utterances lifted verbatim from other skills' golden slices, picked for
+# lexical overlap with this skill's "ready", "notification", "enable" and
+# "disable" vocabulary
 NEGATIVE_UTTERANCES = [
     ("what color is this", "ovos-skill-color-picker.openvoiceos"),
     ("take a picture", "ovos-skill-camera.openvoiceos"),
@@ -39,76 +86,16 @@ NEGATIVE_UTTERANCES = [
 ]
 
 
-def _label_to_bus_name(intent_label: str) -> str:
-    return intent_label[:-len(".intent")] if intent_label.endswith(".intent") else intent_label
-
-
-def _load_golden_rows():
-    rows = []
-    with open(GOLDEN_PATH, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                continue
-            rows.append(row)
-    return rows
-
-
-GOLDEN_ROWS = [pytest.param(r, id=r["utterance"]) for r in _load_golden_rows()]
-
-
-@pytest.fixture(scope="module")
-def minicroft():
-    # is_device_ready() polls every other loaded service for a ready signal
-    # and blocks for 60s in a minimal MiniCroft -- short-circuit it so the
-    # skill boots deterministically (readiness gating is not under test
-    # here, intent routing is; see test_intents_en_us.py for the full
-    # rationale).
-    ready_patch = patch(
-        "ovos_skill_boot_finished.BootFinishedSkill.is_device_ready",
-        new=lambda self, *args, **kwargs: True,
-    )
-    ready_patch.start()
-    mc = get_minicroft([SKILL_ID])
-    yield mc
-    mc.stop()
-    ready_patch.stop()
-
-
-def _types(mc, text, session_id):
-    session = Session(session_id)
-    session.lang = LANG
-    session.pipeline = [
-        "ovos-padacioso-pipeline-plugin-high",
-        "ovos-padacioso-pipeline-plugin-medium",
-    ]
-    utterance = Message(
-        "recognizer_loop:utterance",
-        {"utterances": [text], "lang": LANG},
-        {"session": session.serialize(), "source": "A", "destination": "B"},
-    )
-    capture = CaptureSession(mc)
-    capture.capture(utterance, timeout=30)
-    return [m.msg_type for m in capture.finish()]
-
-
-@pytest.mark.timeout(60)
-@pytest.mark.parametrize("row", GOLDEN_ROWS, ids=lambda r: r["utterance"])
-def test_golden_utterance(minicroft, row):
-    intent_name = _label_to_bus_name(row["intent_label"])
-    types = _types(minicroft, row["utterance"], f"golden-{row['utterance']}")
-    assert f"{SKILL_ID}:{intent_name}" in types, (
-        f"{row['utterance']!r}: expected {SKILL_ID}:{intent_name!r}, got {types!r}"
-    )
-
-
-@pytest.mark.timeout(60)
 @pytest.mark.parametrize("negative", NEGATIVE_UTTERANCES, ids=lambda n: n[0])
-def test_negative_confusable_not_claimed(minicroft, negative):
+def test_utterance_of_another_skill_reaches_no_intent_of_the_skill(engine_for, negative):
     text, source_skill = negative
-    types = _types(minicroft, text, f"negative-{text}")
-    claimed = any(t.startswith(f"{SKILL_ID}:") for t in types)
-    assert not claimed, f"{text!r} (from {source_skill}) was incorrectly claimed by {SKILL_ID}"
+    fired = _routed(engine_for("en-US"), text, "en-US")
+    TALLY.assert_not_routed(f"{text} (from {source_skill})",
+                            [t for t in fired if t.startswith(f"{SKILL_ID}:")], fired)
+
+
+def test_every_shipping_locale_has_a_golden_file():
+    golden = {p.stem.split("_", 2)[2] for p in END2END_DIR.glob("golden_utterances_*.jsonl")}
+    locale_root = END2END_DIR.parents[1] / "locale"
+    shipping = {d.name for d in locale_root.iterdir() if d.is_dir() and any(d.rglob("*.intent"))}
+    assert golden == shipping, f"golden files {sorted(golden ^ shipping)} differ from shipping locales"
