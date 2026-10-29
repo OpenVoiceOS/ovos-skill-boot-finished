@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.4a1](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.4a1) (2026-10-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.3a4...0.9.4a1)
+
+**Merged pull requests:**
+
+- fix\(test\): isolate the skill unit test and run the whole test tree in CI [\#136](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/136) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.3a4](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.9.3a4) (2026-10-29)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.9.3a3...0.9.3a4)
@@ -440,7 +448,6 @@
 **Merged pull requests:**
 
 - Release 0.4.7a1 [\#35](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/35) ([github-actions[bot]](https://github.com/apps/github-actions))
-- fix: typing + wait for skills [\#34](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/34) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [V0.4.6](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/V0.4.6) (2024-11-06)
 
@@ -450,17 +457,9 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.5...0.4.6)
 
-**Merged pull requests:**
-
-- Release 0.4.6 [\#32](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/32) ([github-actions[bot]](https://github.com/apps/github-actions))
-
 ## [0.4.5](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.5) (2024-11-05)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/compare/0.4.5a2...0.4.5)
-
-**Merged pull requests:**
-
-- Release 0.4.5a1 [\#31](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/pull/31) ([github-actions[bot]](https://github.com/apps/github-actions))
 
 ## [0.4.5a2](https://github.com/OpenVoiceOS/ovos-skill-boot-finished/tree/0.4.5a2) (2024-11-05)
 
